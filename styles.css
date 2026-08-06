@@ -425,6 +425,11 @@ h1 {
   line-height: 1.65;
 }
 
+.project-grid {
+  display: grid;
+  gap: 12px;
+}
+
 .project-card {
   display: grid;
   grid-template-columns: minmax(260px, 0.85fr) minmax(300px, 1.15fr) auto;
@@ -435,6 +440,13 @@ h1 {
   border-radius: 16px;
   background:
     radial-gradient(circle at 5% 50%, rgba(139, 124, 255, 0.13), transparent 26rem),
+    var(--surface);
+}
+
+.project-card--fwd {
+  border-color: rgba(117, 230, 194, 0.24);
+  background:
+    radial-gradient(circle at 5% 50%, rgba(117, 230, 194, 0.12), transparent 26rem),
     var(--surface);
 }
 
@@ -452,6 +464,27 @@ h1 {
   gap: 3px;
   padding: 10px;
   border-radius: 13px;
+}
+
+.project-mark--fwd {
+  display: grid;
+  place-items: center;
+  border-color: rgba(117, 230, 194, 0.48);
+  background: rgba(117, 230, 194, 0.1);
+  color: var(--mint);
+  font-size: 9px;
+  font-weight: 900;
+  letter-spacing: -0.04em;
+}
+
+.project-card--fwd > a {
+  border-color: rgba(117, 230, 194, 0.62);
+  color: #a9efd9;
+}
+
+.project-card--fwd > a:hover {
+  border-color: #d4fff1;
+  color: #e7fff7;
 }
 
 .project-status {
