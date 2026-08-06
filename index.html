@@ -31,27 +31,52 @@
     <div class="ambient ambient--two" aria-hidden="true"></div>
 
     <header class="site-header">
-      <a class="brand" href="#inicio" aria-label="Noke Games, inicio">
+      <a class="brand" href="#inicio" aria-label="Noke Games, inicio" data-i18n-aria="brandHomeAria">
         <span class="brand-mark" aria-hidden="true">
           <i></i><i></i><i></i><i></i>
         </span>
         <span>NOKE <strong>GAMES</strong></span>
       </a>
-      <span class="header-note">Estudio independiente · Chile</span>
+      <div class="header-actions">
+        <span class="header-note" data-i18n="headerNote">Estudio independiente · Chile</span>
+        <div class="language-selector">
+          <label for="language-select" data-i18n="languageLabel">Idioma</label>
+          <select id="language-select" aria-label="Seleccionar idioma" data-i18n-aria="languageAria">
+            <option value="en" lang="en">English</option>
+            <option value="es" lang="es">Español</option>
+            <option value="pt" lang="pt">Português</option>
+            <option value="fr" lang="fr">Français</option>
+            <option value="de" lang="de">Deutsch</option>
+            <option value="it" lang="it">Italiano</option>
+            <option value="hr" lang="hr">Hrvatski</option>
+            <option value="pl" lang="pl">Polski</option>
+            <option value="cs" lang="cs">Čeština</option>
+            <option value="nl" lang="nl">Nederlands</option>
+            <option value="tr" lang="tr">Türkçe</option>
+            <option value="ru" lang="ru">Русский</option>
+            <option value="uk" lang="uk">Українська</option>
+            <option value="ar" lang="ar" dir="rtl">العربية</option>
+            <option value="hi" lang="hi">हिन्दी</option>
+            <option value="zh" lang="zh">简体中文</option>
+            <option value="ja" lang="ja">日本語</option>
+            <option value="ko" lang="ko">한국어</option>
+          </select>
+        </div>
+      </div>
     </header>
 
     <main id="inicio">
       <section class="hero">
         <div class="hero-copy">
-          <p class="eyebrow"><span></span> PEQUEÑO ESTUDIO, GRANDES PARTIDAS</p>
-          <h1>Juegos hechos con intención.</h1>
-          <p class="hero-lede">
+          <p class="eyebrow"><span class="eyebrow-line"></span><span data-i18n="heroEyebrow">PEQUEÑO ESTUDIO, GRANDES PARTIDAS</span></p>
+          <h1 data-i18n="heroTitle">Juegos hechos con intención.</h1>
+          <p class="hero-lede" data-i18n="heroLede">
             Noke Games es un estudio independiente chileno que crea experiencias
             claras, cuidadas y pensadas para conectar personas, una partida a la vez.
           </p>
           <div class="status-line">
             <span class="status-dot" aria-hidden="true"></span>
-            Construyendo nuestro primer catálogo
+            <span data-i18n="heroStatus">Construyendo nuestro primer catálogo</span>
           </div>
         </div>
 
@@ -68,7 +93,7 @@
             <div class="object-core"><span>N</span></div>
           </div>
           <div class="object-footer">
-            <span>Ideas</span><span>Juego</span><span>Comunidad</span>
+            <span data-i18n="objectIdeas">Ideas</span><span data-i18n="objectGame">Juego</span><span data-i18n="objectCommunity">Comunidad</span>
           </div>
         </div>
       </section>
@@ -76,27 +101,27 @@
       <section class="project-section" aria-labelledby="project-title">
         <div class="section-heading">
           <div>
-            <p class="eyebrow"><span></span> EN DESARROLLO</p>
-            <h2 id="project-title">Nuestro primer proyecto.</h2>
+            <p class="eyebrow"><span class="eyebrow-line"></span><span data-i18n="projectEyebrow">EN DESARROLLO</span></p>
+            <h2 id="project-title" data-i18n="projectTitle">Nuestro primer proyecto.</h2>
           </div>
-          <p>Construimos en público, probamos temprano y dejamos que la experiencia marque el ritmo.</p>
+          <p data-i18n="projectIntro">Construimos en público, probamos temprano y dejamos que la experiencia marque el ritmo.</p>
         </div>
 
         <article class="project-card">
           <div class="project-identity">
             <span class="project-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
             <div>
-              <span class="project-status">En desarrollo activo</span>
+              <span class="project-status" data-i18n="projectStatus">En desarrollo activo</span>
               <h3>GridMate Chess</h3>
               <p>Play chess. Anywhere.</p>
             </div>
           </div>
-          <p class="project-copy">
+          <p class="project-copy" data-i18n="projectCopy">
             Una experiencia de ajedrez rápida, multilingüe y sin distracciones,
             diseñada para jugar con claridad desde cualquier dispositivo.
           </p>
           <a href="https://gridmate-chess.vercel.app/" target="_blank" rel="noopener noreferrer">
-            Conocer GridMate Chess <span aria-hidden="true">↗</span>
+            <span data-i18n="projectLink">Conocer GridMate Chess</span> <span aria-hidden="true">↗</span>
           </a>
         </article>
       </section>
@@ -104,36 +129,37 @@
       <section class="principles" aria-labelledby="principles-title">
         <div class="section-heading section-heading--compact">
           <div>
-            <p class="eyebrow"><span></span> CÓMO CREAMOS</p>
-            <h2 id="principles-title">Primero la experiencia.</h2>
+            <p class="eyebrow"><span class="eyebrow-line"></span><span data-i18n="principlesEyebrow">CÓMO CREAMOS</span></p>
+            <h2 id="principles-title" data-i18n="principlesTitle">Primero la experiencia.</h2>
           </div>
         </div>
         <div class="principle-grid">
           <article>
             <span>01</span>
-            <h3>Jugabilidad primero</h3>
-            <p>Cada decisión parte de cómo se siente jugar, no de una lista interminable de funciones.</p>
+            <h3 data-i18n="gameplayTitle">Jugabilidad primero</h3>
+            <p data-i18n="gameplayCopy">Cada decisión parte de cómo se siente jugar, no de una lista interminable de funciones.</p>
           </article>
           <article>
             <span>02</span>
-            <h3>Global desde el inicio</h3>
-            <p>Accesibilidad, múltiples idiomas y dispositivos forman parte de la base.</p>
+            <h3 data-i18n="globalTitle">Global desde el inicio</h3>
+            <p data-i18n="globalCopy">Accesibilidad, múltiples idiomas y dispositivos forman parte de la base.</p>
           </article>
           <article>
             <span>03</span>
-            <h3>Sin ruido</h3>
-            <p>Diseño honesto, sistemas claros y ninguna ventaja injusta por pagar.</p>
+            <h3 data-i18n="clarityTitle">Sin ruido</h3>
+            <p data-i18n="clarityCopy">Diseño honesto, sistemas claros y ninguna ventaja injusta por pagar.</p>
           </article>
         </div>
       </section>
     </main>
 
     <footer>
-      <a class="brand brand--footer" href="#inicio">
+      <a class="brand brand--footer" href="#inicio" aria-label="Noke Games, inicio" data-i18n-aria="brandHomeAria">
         <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
         <span>NOKE <strong>GAMES</strong></span>
       </a>
-      <span>© 2026 NokeGamesCL. Todos los derechos reservados.</span>
+      <span data-i18n="copyright">© 2026 NokeGamesCL. Todos los derechos reservados.</span>
     </footer>
+    <script type="module" src="/translations.mjs"></script>
   </body>
 </html>
