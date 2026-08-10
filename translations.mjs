@@ -373,6 +373,103 @@ export const translations = {
   },
 };
 
+const progressTranslations = {
+  en: {
+    projectStatus: "Under construction", currentStageLabel: "Current stage", currentUpdateLabel: "Now", nextMilestoneLabel: "Next milestone", updatedLabel: "Updated",
+    chessProgressAria: "GridMate Chess development progress", chessStage: "Stage 3 of 5 · Online foundation", chessUpdateTitle: "Update 3A: accounts and profiles", chessUpdateCopy: "Local play is complete, and we are integrating sign-up, sign-in, and secure profiles. Online play is not available yet.", chessNextMilestone: "Private online games",
+    fwdProgressAria: "FWD OPERATORS development progress", fwdStage: "Stage 1 of 5 · Pre-production", fwdUpdateTitle: "Direction and core systems", fwdUpdateCopy: "We are defining the identity, operators, and structure of tactical raids.", fwdNextMilestone: "First playable prototype",
+  },
+  es: {
+    projectStatus: "En construcción", currentStageLabel: "Etapa actual", currentUpdateLabel: "Ahora", nextMilestoneLabel: "Próximo hito", updatedLabel: "Actualizado",
+    chessProgressAria: "Progreso de desarrollo de GridMate Chess", chessStage: "Etapa 3 de 5 · Base online", chessUpdateTitle: "Actualización 3A: cuentas y perfiles", chessUpdateCopy: "El juego local está completo y estamos integrando registro, inicio de sesión y perfiles seguros. El juego online aún no está disponible.", chessNextMilestone: "Partidas privadas online",
+    fwdProgressAria: "Progreso de desarrollo de FWD OPERATORS", fwdStage: "Etapa 1 de 5 · Preproducción", fwdUpdateTitle: "Dirección y sistemas base", fwdUpdateCopy: "Estamos definiendo la identidad, los operadores y la estructura de las incursiones tácticas.", fwdNextMilestone: "Primer prototipo jugable",
+  },
+  pt: {
+    projectStatus: "Em construção", currentStageLabel: "Etapa atual", currentUpdateLabel: "Agora", nextMilestoneLabel: "Próximo marco", updatedLabel: "Atualizado",
+    chessProgressAria: "Progresso de desenvolvimento do GridMate Chess", chessStage: "Etapa 3 de 5 · Base online", chessUpdateTitle: "Atualização 3A: contas e perfis", chessUpdateCopy: "O jogo local está completo, e estamos integrando cadastro, login e perfis seguros. O jogo online ainda não está disponível.", chessNextMilestone: "Partidas privadas online",
+    fwdProgressAria: "Progresso de desenvolvimento do FWD OPERATORS", fwdStage: "Etapa 1 de 5 · Pré-produção", fwdUpdateTitle: "Direção e sistemas principais", fwdUpdateCopy: "Estamos definindo a identidade, os operadores e a estrutura das incursões táticas.", fwdNextMilestone: "Primeiro protótipo jogável",
+  },
+  fr: {
+    projectStatus: "En construction", currentStageLabel: "Étape actuelle", currentUpdateLabel: "En ce moment", nextMilestoneLabel: "Prochain jalon", updatedLabel: "Mis à jour",
+    chessProgressAria: "Avancement du développement de GridMate Chess", chessStage: "Étape 3 sur 5 · Base en ligne", chessUpdateTitle: "Mise à jour 3A : comptes et profils", chessUpdateCopy: "Le jeu local est terminé et nous intégrons l’inscription, la connexion et des profils sécurisés. Le jeu en ligne n’est pas encore disponible.", chessNextMilestone: "Parties privées en ligne",
+    fwdProgressAria: "Avancement du développement de FWD OPERATORS", fwdStage: "Étape 1 sur 5 · Préproduction", fwdUpdateTitle: "Direction et systèmes de base", fwdUpdateCopy: "Nous définissons l’identité, les opérateurs et la structure des raids tactiques.", fwdNextMilestone: "Premier prototype jouable",
+  },
+  de: {
+    projectStatus: "Im Aufbau", currentStageLabel: "Aktuelle Phase", currentUpdateLabel: "Jetzt", nextMilestoneLabel: "Nächster Meilenstein", updatedLabel: "Aktualisiert",
+    chessProgressAria: "Entwicklungsfortschritt von GridMate Chess", chessStage: "Phase 3 von 5 · Online-Grundlage", chessUpdateTitle: "Update 3A: Konten und Profile", chessUpdateCopy: "Das lokale Spiel ist fertig, und wir integrieren Registrierung, Anmeldung und sichere Profile. Online-Spiel ist noch nicht verfügbar.", chessNextMilestone: "Private Online-Partien",
+    fwdProgressAria: "Entwicklungsfortschritt von FWD OPERATORS", fwdStage: "Phase 1 von 5 · Vorproduktion", fwdUpdateTitle: "Ausrichtung und Kernsysteme", fwdUpdateCopy: "Wir definieren Identität, Operatoren und Struktur der taktischen Raids.", fwdNextMilestone: "Erster spielbarer Prototyp",
+  },
+  it: {
+    projectStatus: "In costruzione", currentStageLabel: "Fase attuale", currentUpdateLabel: "Ora", nextMilestoneLabel: "Prossimo traguardo", updatedLabel: "Aggiornato",
+    chessProgressAria: "Avanzamento dello sviluppo di GridMate Chess", chessStage: "Fase 3 di 5 · Base online", chessUpdateTitle: "Aggiornamento 3A: account e profili", chessUpdateCopy: "Il gioco locale è completo e stiamo integrando registrazione, accesso e profili sicuri. Il gioco online non è ancora disponibile.", chessNextMilestone: "Partite private online",
+    fwdProgressAria: "Avanzamento dello sviluppo di FWD OPERATORS", fwdStage: "Fase 1 di 5 · Pre-produzione", fwdUpdateTitle: "Direzione e sistemi principali", fwdUpdateCopy: "Stiamo definendo l’identità, gli operatori e la struttura delle incursioni tattiche.", fwdNextMilestone: "Primo prototipo giocabile",
+  },
+  hr: {
+    projectStatus: "U izradi", currentStageLabel: "Trenutna faza", currentUpdateLabel: "Sada", nextMilestoneLabel: "Sljedeći cilj", updatedLabel: "Ažurirano",
+    chessProgressAria: "Napredak razvoja igre GridMate Chess", chessStage: "Faza 3 od 5 · Mrežni temelj", chessUpdateTitle: "Ažuriranje 3A: računi i profili", chessUpdateCopy: "Lokalna igra je dovršena i uvodimo registraciju, prijavu i sigurne profile. Mrežno igranje još nije dostupno.", chessNextMilestone: "Privatne mrežne partije",
+    fwdProgressAria: "Napredak razvoja igre FWD OPERATORS", fwdStage: "Faza 1 od 5 · Predprodukcija", fwdUpdateTitle: "Smjer i osnovni sustavi", fwdUpdateCopy: "Definiramo identitet, operativce i strukturu taktičkih prepada.", fwdNextMilestone: "Prvi igrivi prototip",
+  },
+  pl: {
+    projectStatus: "W budowie", currentStageLabel: "Obecny etap", currentUpdateLabel: "Teraz", nextMilestoneLabel: "Następny cel", updatedLabel: "Zaktualizowano",
+    chessProgressAria: "Postęp prac nad GridMate Chess", chessStage: "Etap 3 z 5 · Fundament online", chessUpdateTitle: "Aktualizacja 3A: konta i profile", chessUpdateCopy: "Gra lokalna jest ukończona, a teraz wdrażamy rejestrację, logowanie i bezpieczne profile. Gra online nie jest jeszcze dostępna.", chessNextMilestone: "Prywatne partie online",
+    fwdProgressAria: "Postęp prac nad FWD OPERATORS", fwdStage: "Etap 1 z 5 · Preprodukcja", fwdUpdateTitle: "Kierunek i systemy podstawowe", fwdUpdateCopy: "Definiujemy tożsamość, operatorów i strukturę rajdów taktycznych.", fwdNextMilestone: "Pierwszy grywalny prototyp",
+  },
+  cs: {
+    projectStatus: "Ve výstavbě", currentStageLabel: "Aktuální fáze", currentUpdateLabel: "Nyní", nextMilestoneLabel: "Další milník", updatedLabel: "Aktualizováno",
+    chessProgressAria: "Postup vývoje GridMate Chess", chessStage: "Fáze 3 z 5 · Online základ", chessUpdateTitle: "Aktualizace 3A: účty a profily", chessUpdateCopy: "Místní hra je dokončena a integrujeme registraci, přihlášení a bezpečné profily. Online hra zatím není dostupná.", chessNextMilestone: "Soukromé online partie",
+    fwdProgressAria: "Postup vývoje FWD OPERATORS", fwdStage: "Fáze 1 z 5 · Předprodukce", fwdUpdateTitle: "Směr a základní systémy", fwdUpdateCopy: "Definujeme identitu, operátory a strukturu taktických nájezdů.", fwdNextMilestone: "První hratelný prototyp",
+  },
+  nl: {
+    projectStatus: "In aanbouw", currentStageLabel: "Huidige fase", currentUpdateLabel: "Nu", nextMilestoneLabel: "Volgende mijlpaal", updatedLabel: "Bijgewerkt",
+    chessProgressAria: "Ontwikkelingsvoortgang van GridMate Chess", chessStage: "Fase 3 van 5 · Online basis", chessUpdateTitle: "Update 3A: accounts en profielen", chessUpdateCopy: "Lokaal spelen is voltooid en we integreren registratie, aanmelding en veilige profielen. Online spelen is nog niet beschikbaar.", chessNextMilestone: "Privépartijen online",
+    fwdProgressAria: "Ontwikkelingsvoortgang van FWD OPERATORS", fwdStage: "Fase 1 van 5 · Preproductie", fwdUpdateTitle: "Richting en kernsystemen", fwdUpdateCopy: "We bepalen de identiteit, operators en structuur van de tactische raids.", fwdNextMilestone: "Eerste speelbare prototype",
+  },
+  tr: {
+    projectStatus: "Yapım aşamasında", currentStageLabel: "Mevcut aşama", currentUpdateLabel: "Şimdi", nextMilestoneLabel: "Sonraki hedef", updatedLabel: "Güncellendi",
+    chessProgressAria: "GridMate Chess geliştirme ilerlemesi", chessStage: "Aşama 3/5 · Çevrimiçi temel", chessUpdateTitle: "Güncelleme 3A: hesaplar ve profiller", chessUpdateCopy: "Yerel oyun tamamlandı; kayıt, oturum açma ve güvenli profilleri entegre ediyoruz. Çevrimiçi oyun henüz kullanılamıyor.", chessNextMilestone: "Özel çevrimiçi maçlar",
+    fwdProgressAria: "FWD OPERATORS geliştirme ilerlemesi", fwdStage: "Aşama 1/5 · Ön prodüksiyon", fwdUpdateTitle: "Yön ve temel sistemler", fwdUpdateCopy: "Kimliği, operatörleri ve taktik baskınların yapısını tanımlıyoruz.", fwdNextMilestone: "İlk oynanabilir prototip",
+  },
+  ru: {
+    projectStatus: "В разработке", currentStageLabel: "Текущий этап", currentUpdateLabel: "Сейчас", nextMilestoneLabel: "Следующая цель", updatedLabel: "Обновлено",
+    chessProgressAria: "Ход разработки GridMate Chess", chessStage: "Этап 3 из 5 · Онлайн-основа", chessUpdateTitle: "Обновление 3A: аккаунты и профили", chessUpdateCopy: "Локальная игра завершена, и мы добавляем регистрацию, вход и защищённые профили. Онлайн-игра пока недоступна.", chessNextMilestone: "Приватные онлайн-партии",
+    fwdProgressAria: "Ход разработки FWD OPERATORS", fwdStage: "Этап 1 из 5 · Предпроизводство", fwdUpdateTitle: "Направление и базовые системы", fwdUpdateCopy: "Мы определяем стиль, операторов и структуру тактических рейдов.", fwdNextMilestone: "Первый игровой прототип",
+  },
+  uk: {
+    projectStatus: "У розробці", currentStageLabel: "Поточний етап", currentUpdateLabel: "Зараз", nextMilestoneLabel: "Наступна ціль", updatedLabel: "Оновлено",
+    chessProgressAria: "Перебіг розробки GridMate Chess", chessStage: "Етап 3 із 5 · Онлайн-основа", chessUpdateTitle: "Оновлення 3A: акаунти та профілі", chessUpdateCopy: "Локальну гру завершено, і ми додаємо реєстрацію, вхід та захищені профілі. Онлайн-гра поки недоступна.", chessNextMilestone: "Приватні онлайн-партії",
+    fwdProgressAria: "Перебіг розробки FWD OPERATORS", fwdStage: "Етап 1 із 5 · Передвиробництво", fwdUpdateTitle: "Напрям і базові системи", fwdUpdateCopy: "Ми визначаємо стиль, операторів і структуру тактичних рейдів.", fwdNextMilestone: "Перший ігровий прототип",
+  },
+  ar: {
+    projectStatus: "قيد الإنشاء", currentStageLabel: "المرحلة الحالية", currentUpdateLabel: "الآن", nextMilestoneLabel: "المحطة التالية", updatedLabel: "آخر تحديث",
+    chessProgressAria: "تقدم تطوير GridMate Chess", chessStage: "المرحلة 3 من 5 · أساس اللعب عبر الإنترنت", chessUpdateTitle: "التحديث 3A: الحسابات والملفات الشخصية", chessUpdateCopy: "اكتمل اللعب المحلي، ونعمل على دمج التسجيل وتسجيل الدخول والملفات الشخصية الآمنة. اللعب عبر الإنترنت غير متاح بعد.", chessNextMilestone: "مباريات خاصة عبر الإنترنت",
+    fwdProgressAria: "تقدم تطوير FWD OPERATORS", fwdStage: "المرحلة 1 من 5 · ما قبل الإنتاج", fwdUpdateTitle: "التوجه والأنظمة الأساسية", fwdUpdateCopy: "نعمل على تحديد الهوية والعملاء وبنية الغارات التكتيكية.", fwdNextMilestone: "أول نموذج أولي قابل للعب",
+  },
+  hi: {
+    projectStatus: "निर्माणाधीन", currentStageLabel: "वर्तमान चरण", currentUpdateLabel: "अभी", nextMilestoneLabel: "अगला लक्ष्य", updatedLabel: "अपडेट किया गया",
+    chessProgressAria: "GridMate Chess विकास की प्रगति", chessStage: "चरण 3/5 · ऑनलाइन आधार", chessUpdateTitle: "अपडेट 3A: खाते और प्रोफ़ाइल", chessUpdateCopy: "लोकल खेल पूरा हो चुका है और हम पंजीकरण, साइन-इन और सुरक्षित प्रोफ़ाइल जोड़ रहे हैं। ऑनलाइन खेल अभी उपलब्ध नहीं है।", chessNextMilestone: "निजी ऑनलाइन मैच",
+    fwdProgressAria: "FWD OPERATORS विकास की प्रगति", fwdStage: "चरण 1/5 · पूर्व-निर्माण", fwdUpdateTitle: "दिशा और मूल प्रणालियाँ", fwdUpdateCopy: "हम पहचान, ऑपरेटरों और सामरिक रेड की संरचना तय कर रहे हैं।", fwdNextMilestone: "पहला खेलने योग्य प्रोटोटाइप",
+  },
+  zh: {
+    projectStatus: "正在开发", currentStageLabel: "当前阶段", currentUpdateLabel: "目前", nextMilestoneLabel: "下一里程碑", updatedLabel: "更新时间",
+    chessProgressAria: "GridMate Chess 开发进度", chessStage: "第 3/5 阶段 · 在线基础", chessUpdateTitle: "3A 更新：账户与个人资料", chessUpdateCopy: "本地对局已完成，我们正在整合注册、登录和安全的个人资料。在线对局尚未开放。", chessNextMilestone: "私人在线对局",
+    fwdProgressAria: "FWD OPERATORS 开发进度", fwdStage: "第 1/5 阶段 · 前期制作", fwdUpdateTitle: "方向与核心系统", fwdUpdateCopy: "我们正在确定游戏定位、干员以及战术突袭的结构。", fwdNextMilestone: "首个可玩原型",
+  },
+  ja: {
+    projectStatus: "開発中", currentStageLabel: "現在の段階", currentUpdateLabel: "現在", nextMilestoneLabel: "次の目標", updatedLabel: "更新日",
+    chessProgressAria: "GridMate Chess の開発進捗", chessStage: "第3段階／全5段階 · オンライン基盤", chessUpdateTitle: "アップデート3A：アカウントとプロフィール", chessUpdateCopy: "ローカル対局は完成し、登録、ログイン、安全なプロフィールを実装中です。オンライン対局はまだ利用できません。", chessNextMilestone: "プライベートオンライン対局",
+    fwdProgressAria: "FWD OPERATORS の開発進捗", fwdStage: "第1段階／全5段階 · プリプロダクション", fwdUpdateTitle: "方向性と基幹システム", fwdUpdateCopy: "作品の個性、オペレーター、戦術レイドの構造を定めています。", fwdNextMilestone: "最初のプレイ可能なプロトタイプ",
+  },
+  ko: {
+    projectStatus: "개발 중", currentStageLabel: "현재 단계", currentUpdateLabel: "현재", nextMilestoneLabel: "다음 목표", updatedLabel: "업데이트",
+    chessProgressAria: "GridMate Chess 개발 진행 상황", chessStage: "3/5단계 · 온라인 기반", chessUpdateTitle: "업데이트 3A: 계정과 프로필", chessUpdateCopy: "로컬 플레이는 완성되었으며 가입, 로그인, 안전한 프로필을 통합하고 있습니다. 온라인 플레이는 아직 제공되지 않습니다.", chessNextMilestone: "비공개 온라인 대국",
+    fwdProgressAria: "FWD OPERATORS 개발 진행 상황", fwdStage: "1/5단계 · 프리프로덕션", fwdUpdateTitle: "방향성과 핵심 시스템", fwdUpdateCopy: "정체성, 오퍼레이터, 전술 레이드의 구조를 정의하고 있습니다.", fwdNextMilestone: "첫 플레이 가능 프로토타입",
+  },
+};
+
+Object.entries(progressTranslations).forEach(([code, progress]) => {
+  Object.assign(translations[code], progress);
+});
+
 const storageKey = "nokegames.language";
 const supportedCodes = new Set(languages.map(({ code }) => code));
 
@@ -393,6 +490,17 @@ export function applyLanguage(code, { persist = true } = {}) {
   document.querySelectorAll("[data-i18n-aria]").forEach((element) => {
     const key = element.dataset.i18nAria;
     if (copy[key]) element.setAttribute("aria-label", copy[key]);
+  });
+
+  const dateFormatter = new Intl.DateTimeFormat(language, {
+    day: "numeric",
+    month: "short",
+    year: "numeric",
+    timeZone: "UTC",
+  });
+  document.querySelectorAll("time[data-i18n-date]").forEach((element) => {
+    const value = element.getAttribute("datetime");
+    if (value) element.textContent = dateFormatter.format(new Date(`${value}T00:00:00Z`));
   });
 
   const description = document.querySelector('meta[name="description"]');
