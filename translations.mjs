@@ -12,15 +12,15 @@ export const languages = [
 
 export const translations = {
   en: {
-    metaTitle: "Noke Games — Games made with intention",
-    metaDescription: "Noke Games is an independent Chilean studio creating clear, thoughtful experiences designed to connect people.",
+    metaTitle: "Noke Games — Games with a reason to exist",
+    metaDescription: "Noke Games is an independent Chilean studio creating playable prototypes with identity, clarity, and a reason to exist.",
     brandHomeAria: "Noke Games, home", languageLabel: "Language", languageAria: "Select language",
-    headerNote: "Independent studio · Chile", heroEyebrow: "SMALL STUDIO, BIG GAMES",
-    heroTitle: "Games made with intention.",
-    heroLede: "Noke Games is an independent Chilean studio creating clear, thoughtful experiences designed to connect people, one game at a time.",
-    heroStatus: "Building our first catalog", objectIdeas: "Ideas", objectGame: "Play", objectCommunity: "Community",
+    headerNote: "Independent studio · Chile", heroEyebrow: "SMALL STUDIO, LIVING PROTOTYPES",
+    heroTitle: "We play with ideas until they become games.",
+    heroLede: "Noke Games is an independent Chilean studio creating small, clear games with character: first they feel good, then they grow.",
+    heroStatus: "Building our first catalog in public", objectIdeas: "Ideas", objectGame: "Play", objectCommunity: "Community",
     projectEyebrow: "IN DEVELOPMENT", projectTitle: "Our projects.",
-    projectIntro: "We build in public, test early, and let the experience set the pace.",
+    projectIntro: "Every project shows its real stage, what changed, and the next important milestone.",
     projectStatus: "In active development",
     projectCopy: "A fast, multilingual, distraction-free chess experience designed for clear play on any device.",
     projectLink: "Discover GridMate Chess", fwdTagline: "Command beyond the front line.",
@@ -32,15 +32,15 @@ export const translations = {
     copyright: "© 2026 NokeGamesCL. All rights reserved.",
   },
   es: {
-    metaTitle: "Noke Games — Juegos hechos con intención",
-    metaDescription: "Noke Games es un estudio independiente chileno que crea experiencias claras, cuidadas y pensadas para conectar personas.",
+    metaTitle: "Noke Games — Juegos con una razón para existir",
+    metaDescription: "Noke Games es un estudio independiente chileno que crea prototipos jugables con identidad, claridad y una razón para existir.",
     brandHomeAria: "Noke Games, inicio", languageLabel: "Idioma", languageAria: "Seleccionar idioma",
-    headerNote: "Estudio independiente · Chile", heroEyebrow: "PEQUEÑO ESTUDIO, GRANDES PARTIDAS",
-    heroTitle: "Juegos hechos con intención.",
-    heroLede: "Noke Games es un estudio independiente chileno que crea experiencias claras, cuidadas y pensadas para conectar personas, una partida a la vez.",
-    heroStatus: "Construyendo nuestro primer catálogo", objectIdeas: "Ideas", objectGame: "Juego", objectCommunity: "Comunidad",
+    headerNote: "Estudio independiente · Chile", heroEyebrow: "PEQUEÑO ESTUDIO, PROTOTIPOS VIVOS",
+    heroTitle: "Jugamos con ideas hasta que se vuelven partidas.",
+    heroLede: "Noke Games es un estudio independiente chileno que crea juegos pequeños, claros y con carácter: primero se sienten bien, después crecen.",
+    heroStatus: "Construyendo nuestro primer catálogo en público", objectIdeas: "Ideas", objectGame: "Juego", objectCommunity: "Comunidad",
     projectEyebrow: "EN DESARROLLO", projectTitle: "Nuestros proyectos.",
-    projectIntro: "Construimos en público, probamos temprano y dejamos que la experiencia marque el ritmo.",
+    projectIntro: "Mostramos cada proyecto con su etapa real, lo que cambió y el siguiente hito importante.",
     projectStatus: "En desarrollo activo",
     projectCopy: "Una experiencia de ajedrez rápida, multilingüe y sin distracciones, diseñada para jugar con claridad desde cualquier dispositivo.",
     projectLink: "Conocer GridMate Chess", fwdTagline: "Manda más allá del frente.",
@@ -472,11 +472,11 @@ Object.entries(progressTranslations).forEach(([code, progress]) => {
 
 const purposeContactTranslations = {
   en: {
-    purposeEyebrow: "OUR INTENTION", purposeTitle: "Fun is the beginning.", purposeCopy: "For us, a game made with intention is an experience created with a clear goal beyond entertainment. Its rules, dynamics, pace, and design are chosen to achieve something concrete: connect people, exercise decision-making, tell a story, or leave a lasting memory.", purposeClosing: "Purpose does not replace fun: it gives it direction.",
+    purposeEyebrow: "HOW WE BUILD", purposeTitle: "We do not make speeches. We make games that explain themselves through play.", purposeCopy: "When we say a game has intention, we mean direction, not solemnity. Each prototype starts with one simple question: what should the player feel while playing? From there we choose rules, rhythm, interface, and limits. If something does not make the game clearer, tenser, or more memorable, it does not belong.", purposeClosing: "The idea leads, but fun gets the final word.",
     contactEyebrow: "LET'S TALK", contactTitle: "Have an idea or want to talk?", contactIntro: "Tell us about your proposal, collaboration, or question. We will read your message and reply directly.", contactFormAria: "Contact form", contactNameLabel: "Name", contactEmailLabel: "Email address", contactMessageLabel: "Message", contactPrivacy: "We will use your information only to reply to this message.", contactSubmit: "Send message", contactSuccess: "Thank you. Your message was sent successfully.",
   },
   es: {
-    purposeEyebrow: "POR QUÉ LOS CREAMOS", purposeTitle: "Cada juego nace para provocar algo.", purposeCopy: "Para nosotros, un juego hecho con intención no es solo un juego que entretiene: es una experiencia creada para provocar algo en quien juega. Antes de diseñarlo nos preguntamos qué queremos que el jugador sienta, piense o comparta. A partir de esa respuesta construimos las reglas, los desafíos, el ritmo y el mundo del juego. El propósito puede ser conectar personas, poner a prueba decisiones o contar una historia, pero nunca reemplaza la diversión: la hace más significativa.", purposeClosing: "No agregamos el propósito al final: diseñamos cada juego desde él.",
+    purposeEyebrow: "NUESTRA FORMA", purposeTitle: "No hacemos discursos. Hacemos juegos que se entienden jugando.", purposeCopy: "Cuando decimos que un juego tiene intención, hablamos de dirección, no de solemnidad. Cada prototipo parte de una pregunta sencilla: qué debería sentir la persona al jugar. Desde ahí elegimos reglas, ritmo, interfaz y límites. Si algo no ayuda a que la partida sea más clara, más tensa o más memorable, no entra.", purposeClosing: "La idea manda, pero la diversión tiene la última palabra.",
     contactEyebrow: "HABLEMOS", contactTitle: "¿Tienes una idea o quieres conversar?", contactIntro: "Cuéntanos sobre tu propuesta, colaboración o consulta. Leeremos tu mensaje y te responderemos directamente.", contactFormAria: "Formulario de contacto", contactNameLabel: "Nombre", contactEmailLabel: "Correo electrónico", contactMessageLabel: "Mensaje", contactPrivacy: "Usaremos tus datos únicamente para responder este mensaje.", contactSubmit: "Enviar mensaje", contactSuccess: "Gracias. Tu mensaje fue enviado correctamente.",
   },
   pt: {
@@ -550,16 +550,16 @@ Object.entries(purposeContactTranslations).forEach(([code, copy]) => {
 });
 
 const navigationTranslations = {
-  en: { navAria: "Main navigation", navPurpose: "Intention", navProjects: "Projects", navContact: "Contact" },
-  es: { navAria: "Navegación principal", navPurpose: "Intención", navProjects: "Proyectos", navContact: "Contacto" },
-  pt: { navAria: "Navegação principal", navPurpose: "Intenção", navProjects: "Projetos", navContact: "Contato" },
-  fr: { navAria: "Navigation principale", navPurpose: "Intention", navProjects: "Projets", navContact: "Contact" },
-  de: { navAria: "Hauptnavigation", navPurpose: "Absicht", navProjects: "Projekte", navContact: "Kontakt" },
-  it: { navAria: "Navigazione principale", navPurpose: "Intenzione", navProjects: "Progetti", navContact: "Contatti" },
+  en: { navAria: "Main navigation", navPurpose: "Studio", navProjects: "Projects", navContact: "Contact" },
+  es: { navAria: "Navegación principal", navPurpose: "Estudio", navProjects: "Proyectos", navContact: "Contacto" },
+  pt: { navAria: "Navegação principal", navPurpose: "Estúdio", navProjects: "Projetos", navContact: "Contato" },
+  fr: { navAria: "Navigation principale", navPurpose: "Studio", navProjects: "Projets", navContact: "Contact" },
+  de: { navAria: "Hauptnavigation", navPurpose: "Studio", navProjects: "Projekte", navContact: "Kontakt" },
+  it: { navAria: "Navigazione principale", navPurpose: "Studio", navProjects: "Progetti", navContact: "Contatti" },
   hr: { navAria: "Glavna navigacija", navPurpose: "Namjera", navProjects: "Projekti", navContact: "Kontakt" },
   pl: { navAria: "Główna nawigacja", navPurpose: "Intencja", navProjects: "Projekty", navContact: "Kontakt" },
   cs: { navAria: "Hlavní navigace", navPurpose: "Záměr", navProjects: "Projekty", navContact: "Kontakt" },
-  nl: { navAria: "Hoofdnavigatie", navPurpose: "Intentie", navProjects: "Projecten", navContact: "Contact" },
+  nl: { navAria: "Hoofdnavigatie", navPurpose: "Studio", navProjects: "Projecten", navContact: "Contact" },
   tr: { navAria: "Ana gezinme", navPurpose: "Niyet", navProjects: "Projeler", navContact: "İletişim" },
   ru: { navAria: "Основная навигация", navPurpose: "Замысел", navProjects: "Проекты", navContact: "Контакты" },
   uk: { navAria: "Основна навігація", navPurpose: "Задум", navProjects: "Проєкти", navContact: "Контакти" },
