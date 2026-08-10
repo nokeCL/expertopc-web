@@ -119,31 +119,50 @@ footer {
   outline-offset: 2px;
 }
 
-.brand-mark,
-.project-mark {
+.brand-mark {
+  position: relative;
   display: grid;
-  grid-template-columns: repeat(2, 7px);
-  gap: 2px;
-  width: 27px;
-  height: 27px;
-  padding: 5px;
-  border: 1px solid rgba(139, 124, 255, 0.52);
-  border-radius: 8px;
-  background: rgba(139, 124, 255, 0.12);
-  box-shadow: 0 0 30px rgba(139, 124, 255, 0.12);
+  width: 34px;
+  height: 34px;
+  overflow: hidden;
+  place-items: center;
+  border: 1px solid rgba(157, 145, 255, 0.66);
+  border-radius: 10px 10px 10px 4px;
+  background:
+    linear-gradient(135deg, rgba(139, 124, 255, 0.34), transparent 52%),
+    #0c0d15;
+  box-shadow: 0 10px 28px rgba(79, 65, 180, 0.2), inset 0 1px rgba(255, 255, 255, 0.1);
+  transform: rotate(-3deg);
 }
 
-.brand-mark i,
-.project-mark i {
+.brand-mark::before {
+  position: absolute;
+  inset: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 5px;
+  content: "";
+}
+
+.brand-mark::after {
+  position: absolute;
+  right: 3px;
+  bottom: 3px;
+  width: 5px;
+  height: 5px;
   border-radius: 1px;
-  background: var(--violet);
+  background: var(--coral);
+  box-shadow: -22px -22px 0 rgba(117, 230, 194, 0.72);
+  content: "";
 }
 
-.brand-mark i:nth-child(2),
-.brand-mark i:nth-child(3),
-.project-mark i:nth-child(2),
-.project-mark i:nth-child(3) {
-  opacity: 0.36;
+.brand-mark span {
+  position: relative;
+  z-index: 1;
+  color: #ece9ff;
+  font-size: 16px;
+  font-weight: 950;
+  letter-spacing: -0.08em;
+  transform: rotate(3deg) translateX(-0.03em);
 }
 
 .header-note {
@@ -539,23 +558,83 @@ h1 {
 
 .project-mark {
   flex: 0 0 auto;
-  grid-template-columns: repeat(2, 11px);
-  width: 47px;
-  height: 47px;
-  gap: 3px;
-  padding: 10px;
-  border-radius: 13px;
+  display: grid;
+  width: 56px;
+  height: 50px;
+  align-content: center;
+  justify-items: center;
+  gap: 2px;
+  overflow: hidden;
+  border: 1px solid rgba(139, 124, 255, 0.48);
+  border-radius: 12px;
+  background: #0b1020;
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.08), 0 14px 34px rgba(0, 0, 0, 0.24);
+}
+
+.project-mark strong,
+.project-mark small {
+  position: relative;
+  z-index: 1;
+  line-height: 1;
+}
+
+.project-mark strong {
+  font-size: 14px;
+  font-weight: 950;
+  letter-spacing: -0.08em;
+}
+
+.project-mark small {
+  font-size: 5px;
+  font-weight: 850;
+  letter-spacing: 0.16em;
+}
+
+.project-mark--gridmate {
+  position: relative;
+  color: #dfeaff;
+  background:
+    linear-gradient(rgba(120, 168, 255, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(120, 168, 255, 0.08) 1px, transparent 1px),
+    linear-gradient(145deg, #14264a, #080d18 72%);
+  background-size: 12px 12px, 12px 12px, auto;
+}
+
+.project-mark--gridmate::after {
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+  width: 7px;
+  height: 7px;
+  border-radius: 2px;
+  background: #78a8ff;
+  box-shadow: 0 0 12px rgba(120, 168, 255, 0.58);
+  content: "";
+}
+
+.project-mark--gridmate small {
+  color: #8ba9d7;
 }
 
 .project-mark--fwd {
-  display: grid;
-  place-items: center;
-  border-color: rgba(117, 230, 194, 0.48);
-  background: rgba(117, 230, 194, 0.1);
+  border-color: rgba(126, 224, 179, 0.5);
+  border-radius: 4px;
+  background:
+    linear-gradient(135deg, rgba(126, 224, 179, 0.08), transparent 58%),
+    #020605;
+  color: #edf7f2;
+  box-shadow: inset 3px 0 var(--mint), 0 14px 34px rgba(0, 0, 0, 0.3);
+}
+
+.project-mark--fwd strong {
+  font-size: 15px;
+  letter-spacing: -0.1em;
+}
+
+.project-mark--fwd small {
   color: var(--mint);
-  font-size: 9px;
-  font-weight: 900;
-  letter-spacing: -0.04em;
+  font-size: 4.8px;
+  letter-spacing: 0.11em;
 }
 
 .project-card--fwd > a {
@@ -933,9 +1012,25 @@ footer {
 }
 
 .brand--footer .brand-mark {
-  width: 23px;
-  height: 23px;
-  padding: 4px;
+  width: 25px;
+  height: 25px;
+  border-radius: 8px 8px 8px 3px;
+}
+
+.brand--footer .brand-mark span {
+  font-size: 12px;
+}
+
+.brand--footer .brand-mark::before {
+  inset: 4px;
+}
+
+.brand--footer .brand-mark::after {
+  right: 2px;
+  bottom: 2px;
+  width: 4px;
+  height: 4px;
+  box-shadow: -15px -15px 0 rgba(117, 230, 194, 0.72);
 }
 
 @media (max-width: 900px) {
