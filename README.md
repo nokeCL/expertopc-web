@@ -17,3 +17,13 @@ Cada actualización debe cambiar, en conjunto, la etapa actual, el resumen de lo
 que se está construyendo, el próximo hito y la fecha. Las barras y las fechas
 están en `index.html`; los textos de los 18 idiomas están agrupados en
 `progressTranslations`, dentro de `translations.mjs`.
+
+## Formulario de contacto
+
+El formulario usa FormSubmit y actualmente entrega los mensajes a
+`nsantanajulio@gmail.com`. Para cambiar el destinatario basta con reemplazar ese
+correo en el atributo `action` del formulario en `index.html`. FormSubmit pedirá
+confirmar una vez el nuevo correo antes de comenzar a reenviar mensajes.
+
+Los textos de la explicación sobre juegos hechos con intención y del formulario
+están agrupados en `purposeContactTranslations`, dentro de `translations.mjs`.

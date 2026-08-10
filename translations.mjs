@@ -470,6 +470,85 @@ Object.entries(progressTranslations).forEach(([code, progress]) => {
   Object.assign(translations[code], progress);
 });
 
+const purposeContactTranslations = {
+  en: {
+    purposeEyebrow: "OUR INTENTION", purposeTitle: "Fun is the beginning.", purposeCopy: "For us, a game made with intention is an experience created with a clear goal beyond entertainment. Its rules, dynamics, pace, and design are chosen to achieve something concrete: connect people, exercise decision-making, tell a story, or leave a lasting memory.", purposeClosing: "Purpose does not replace fun: it gives it direction.",
+    contactEyebrow: "LET'S TALK", contactTitle: "Have an idea or want to talk?", contactIntro: "Tell us about your proposal, collaboration, or question. We will read your message and reply directly.", contactFormAria: "Contact form", contactNameLabel: "Name", contactEmailLabel: "Email address", contactMessageLabel: "Message", contactPrivacy: "We will use your information only to reply to this message.", contactSubmit: "Send message", contactSuccess: "Thank you. Your message was sent successfully.",
+  },
+  es: {
+    purposeEyebrow: "QUÉ SIGNIFICA", purposeTitle: "Juegos con un propósito claro.", purposeCopy: "Los juegos hechos con intención —o juegos con propósito— son experiencias lúdicas diseñadas con un objetivo específico y definido que va más allá de la simple diversión. Por eso, la dinámica, las reglas, los desafíos, el ritmo y los recursos de cada juego se eligen cuidadosamente para alcanzar una meta concreta: conectar personas, entrenar decisiones, contar una historia o dejar un aprendizaje.", purposeClosing: "La diversión sigue siendo esencial; la intención le da sentido y dirección.",
+    contactEyebrow: "HABLEMOS", contactTitle: "¿Tienes una idea o quieres conversar?", contactIntro: "Cuéntanos sobre tu propuesta, colaboración o consulta. Leeremos tu mensaje y te responderemos directamente.", contactFormAria: "Formulario de contacto", contactNameLabel: "Nombre", contactEmailLabel: "Correo electrónico", contactMessageLabel: "Mensaje", contactPrivacy: "Usaremos tus datos únicamente para responder este mensaje.", contactSubmit: "Enviar mensaje", contactSuccess: "Gracias. Tu mensaje fue enviado correctamente.",
+  },
+  pt: {
+    purposeEyebrow: "NOSSA INTENÇÃO", purposeTitle: "A diversão é o começo.", purposeCopy: "Para nós, um jogo feito com intenção é uma experiência criada com um objetivo claro além de entreter. Suas regras, dinâmica, ritmo e design são escolhidos para alcançar algo concreto: conectar pessoas, exercitar decisões, contar uma história ou deixar uma lembrança.", purposeClosing: "O propósito não substitui a diversão: ele lhe dá direção.",
+    contactEyebrow: "VAMOS CONVERSAR", contactTitle: "Tem uma ideia ou quer conversar?", contactIntro: "Conte-nos sobre sua proposta, colaboração ou dúvida. Leremos sua mensagem e responderemos diretamente.", contactFormAria: "Formulário de contato", contactNameLabel: "Nome", contactEmailLabel: "E-mail", contactMessageLabel: "Mensagem", contactPrivacy: "Usaremos seus dados apenas para responder a esta mensagem.", contactSubmit: "Enviar mensagem", contactSuccess: "Obrigado. Sua mensagem foi enviada com sucesso.",
+  },
+  fr: {
+    purposeEyebrow: "NOTRE INTENTION", purposeTitle: "Le plaisir n’est que le début.", purposeCopy: "Pour nous, un jeu conçu avec intention est une expérience créée avec un objectif clair au-delà du divertissement. Ses règles, sa dynamique, son rythme et son design sont choisis pour accomplir quelque chose de concret : rapprocher les gens, exercer la prise de décision, raconter une histoire ou laisser un souvenir.", purposeClosing: "L’intention ne remplace pas le plaisir : elle lui donne une direction.",
+    contactEyebrow: "PARLONS-EN", contactTitle: "Une idée ou envie d’échanger ?", contactIntro: "Parlez-nous de votre proposition, collaboration ou question. Nous lirons votre message et vous répondrons directement.", contactFormAria: "Formulaire de contact", contactNameLabel: "Nom", contactEmailLabel: "Adresse e-mail", contactMessageLabel: "Message", contactPrivacy: "Nous utiliserons vos données uniquement pour répondre à ce message.", contactSubmit: "Envoyer le message", contactSuccess: "Merci. Votre message a bien été envoyé.",
+  },
+  de: {
+    purposeEyebrow: "UNSERE ABSICHT", purposeTitle: "Spaß ist der Anfang.", purposeCopy: "Für uns ist ein bewusst gestaltetes Spiel ein Erlebnis mit einem klaren Ziel, das über Unterhaltung hinausgeht. Regeln, Dynamik, Tempo und Design werden gewählt, um etwas Konkretes zu bewirken: Menschen zu verbinden, Entscheidungen zu trainieren, eine Geschichte zu erzählen oder eine bleibende Erinnerung zu schaffen.", purposeClosing: "Sinn ersetzt den Spaß nicht: Er gibt ihm eine Richtung.",
+    contactEyebrow: "SPRECHEN WIR", contactTitle: "Eine Idee oder Lust auf ein Gespräch?", contactIntro: "Erzähle uns von deinem Vorschlag, einer Zusammenarbeit oder deiner Frage. Wir lesen deine Nachricht und antworten direkt.", contactFormAria: "Kontaktformular", contactNameLabel: "Name", contactEmailLabel: "E-Mail-Adresse", contactMessageLabel: "Nachricht", contactPrivacy: "Wir verwenden deine Daten nur, um auf diese Nachricht zu antworten.", contactSubmit: "Nachricht senden", contactSuccess: "Danke. Deine Nachricht wurde erfolgreich gesendet.",
+  },
+  it: {
+    purposeEyebrow: "LA NOSTRA INTENZIONE", purposeTitle: "Il divertimento è l’inizio.", purposeCopy: "Per noi, un gioco creato con intenzione è un’esperienza con un obiettivo chiaro oltre all’intrattenimento. Regole, dinamiche, ritmo e design vengono scelti per ottenere qualcosa di concreto: connettere le persone, allenare le decisioni, raccontare una storia o lasciare un ricordo.", purposeClosing: "Lo scopo non sostituisce il divertimento: gli dà una direzione.",
+    contactEyebrow: "PARLIAMONE", contactTitle: "Hai un’idea o vuoi parlare?", contactIntro: "Raccontaci la tua proposta, collaborazione o domanda. Leggeremo il messaggio e ti risponderemo direttamente.", contactFormAria: "Modulo di contatto", contactNameLabel: "Nome", contactEmailLabel: "Indirizzo e-mail", contactMessageLabel: "Messaggio", contactPrivacy: "Useremo i tuoi dati solo per rispondere a questo messaggio.", contactSubmit: "Invia messaggio", contactSuccess: "Grazie. Il tuo messaggio è stato inviato correttamente.",
+  },
+  hr: {
+    purposeEyebrow: "NAŠA NAMJERA", purposeTitle: "Zabava je početak.", purposeCopy: "Za nas je igra stvorena s namjerom iskustvo s jasnim ciljem koji nadilazi samu zabavu. Pravila, dinamika, ritam i dizajn biraju se kako bi se postiglo nešto konkretno: povezali ljudi, vježbalo odlučivanje, ispričala priča ili ostavila uspomena.", purposeClosing: "Svrha ne zamjenjuje zabavu: ona joj daje smjer.",
+    contactEyebrow: "RAZGOVARAJMO", contactTitle: "Imaš ideju ili želiš razgovarati?", contactIntro: "Ispričaj nam o prijedlogu, suradnji ili pitanju. Pročitat ćemo poruku i odgovoriti ti izravno.", contactFormAria: "Obrazac za kontakt", contactNameLabel: "Ime", contactEmailLabel: "E-adresa", contactMessageLabel: "Poruka", contactPrivacy: "Tvoje ćemo podatke koristiti samo za odgovor na ovu poruku.", contactSubmit: "Pošalji poruku", contactSuccess: "Hvala. Tvoja je poruka uspješno poslana.",
+  },
+  pl: {
+    purposeEyebrow: "NASZA INTENCJA", purposeTitle: "Zabawa to początek.", purposeCopy: "Dla nas gra tworzona z intencją to doświadczenie z wyraźnym celem wykraczającym poza rozrywkę. Zasady, dynamika, tempo i projekt są dobierane tak, by osiągnąć coś konkretnego: łączyć ludzi, ćwiczyć podejmowanie decyzji, opowiadać historię lub pozostawiać wspomnienie.", purposeClosing: "Cel nie zastępuje zabawy: nadaje jej kierunek.",
+    contactEyebrow: "POROZMAWIAJMY", contactTitle: "Masz pomysł lub chcesz porozmawiać?", contactIntro: "Opowiedz nam o propozycji, współpracy lub pytaniu. Przeczytamy wiadomość i odpowiemy bezpośrednio.", contactFormAria: "Formularz kontaktowy", contactNameLabel: "Imię", contactEmailLabel: "Adres e-mail", contactMessageLabel: "Wiadomość", contactPrivacy: "Użyjemy Twoich danych wyłącznie do odpowiedzi na tę wiadomość.", contactSubmit: "Wyślij wiadomość", contactSuccess: "Dziękujemy. Wiadomość została wysłana.",
+  },
+  cs: {
+    purposeEyebrow: "NÁŠ ZÁMĚR", purposeTitle: "Zábava je začátek.", purposeCopy: "Pro nás je hra vytvořená se záměrem zážitkem s jasným cílem nad rámec zábavy. Pravidla, dynamika, tempo a design volíme tak, aby dosáhly něčeho konkrétního: spojovaly lidi, procvičovaly rozhodování, vyprávěly příběh nebo zanechaly vzpomínku.", purposeClosing: "Účel nenahrazuje zábavu: dává jí směr.",
+    contactEyebrow: "PROMLUVME SI", contactTitle: "Máš nápad nebo si chceš promluvit?", contactIntro: "Napiš nám o svém návrhu, spolupráci nebo dotazu. Zprávu si přečteme a odpovíme přímo.", contactFormAria: "Kontaktní formulář", contactNameLabel: "Jméno", contactEmailLabel: "E-mailová adresa", contactMessageLabel: "Zpráva", contactPrivacy: "Tvé údaje použijeme pouze k odpovědi na tuto zprávu.", contactSubmit: "Odeslat zprávu", contactSuccess: "Děkujeme. Zpráva byla úspěšně odeslána.",
+  },
+  nl: {
+    purposeEyebrow: "ONZE INTENTIE", purposeTitle: "Plezier is het begin.", purposeCopy: "Voor ons is een bewust gemaakt spel een ervaring met een duidelijk doel naast vermaak. Regels, dynamiek, tempo en ontwerp worden gekozen om iets concreets te bereiken: mensen verbinden, beslissingen oefenen, een verhaal vertellen of een herinnering achterlaten.", purposeClosing: "Een doel vervangt plezier niet: het geeft er richting aan.",
+    contactEyebrow: "LATEN WE PRATEN", contactTitle: "Een idee of zin in een gesprek?", contactIntro: "Vertel ons over je voorstel, samenwerking of vraag. We lezen je bericht en antwoorden rechtstreeks.", contactFormAria: "Contactformulier", contactNameLabel: "Naam", contactEmailLabel: "E-mailadres", contactMessageLabel: "Bericht", contactPrivacy: "We gebruiken je gegevens alleen om op dit bericht te antwoorden.", contactSubmit: "Bericht versturen", contactSuccess: "Bedankt. Je bericht is succesvol verzonden.",
+  },
+  tr: {
+    purposeEyebrow: "NİYETİMİZ", purposeTitle: "Eğlence başlangıçtır.", purposeCopy: "Bizim için niyetle yapılmış bir oyun, eğlencenin ötesinde açık bir hedefle yaratılan deneyimdir. Kurallar, dinamikler, tempo ve tasarım; insanları buluşturmak, karar verme becerisini geliştirmek, bir hikâye anlatmak veya kalıcı bir anı bırakmak için özenle seçilir.", purposeClosing: "Amaç eğlencenin yerini almaz: ona yön verir.",
+    contactEyebrow: "KONUŞALIM", contactTitle: "Bir fikrin mi var veya konuşmak mı istiyorsun?", contactIntro: "Önerini, iş birliği fikrini veya sorunu bize anlat. Mesajını okuyup doğrudan yanıtlayacağız.", contactFormAria: "İletişim formu", contactNameLabel: "Ad", contactEmailLabel: "E-posta adresi", contactMessageLabel: "Mesaj", contactPrivacy: "Bilgilerini yalnızca bu mesaja yanıt vermek için kullanacağız.", contactSubmit: "Mesaj gönder", contactSuccess: "Teşekkürler. Mesajın başarıyla gönderildi.",
+  },
+  ru: {
+    purposeEyebrow: "НАШ ЗАМЫСЕЛ", purposeTitle: "Развлечение — это начало.", purposeCopy: "Для нас игра, созданная с намерением, — это опыт с ясной целью помимо развлечения. Правила, динамика, темп и дизайн выбираются так, чтобы добиться конкретного результата: объединить людей, развить принятие решений, рассказать историю или оставить воспоминание.", purposeClosing: "Цель не заменяет удовольствие: она задаёт ему направление.",
+    contactEyebrow: "ДАВАЙТЕ ОБСУДИМ", contactTitle: "Есть идея или хотите поговорить?", contactIntro: "Расскажите нам о предложении, сотрудничестве или вопросе. Мы прочитаем сообщение и ответим напрямую.", contactFormAria: "Контактная форма", contactNameLabel: "Имя", contactEmailLabel: "Электронная почта", contactMessageLabel: "Сообщение", contactPrivacy: "Мы используем ваши данные только для ответа на это сообщение.", contactSubmit: "Отправить сообщение", contactSuccess: "Спасибо. Ваше сообщение успешно отправлено.",
+  },
+  uk: {
+    purposeEyebrow: "НАШ ЗАДУМ", purposeTitle: "Розвага — це початок.", purposeCopy: "Для нас гра, створена з наміром, — це досвід із чіткою метою поза розвагою. Правила, динаміка, темп і дизайн обираються, щоб досягти конкретного результату: об’єднати людей, тренувати ухвалення рішень, розповісти історію або залишити спогад.", purposeClosing: "Мета не замінює задоволення: вона надає йому напрям.",
+    contactEyebrow: "ПОГОВОРІМО", contactTitle: "Маєте ідею або хочете поспілкуватися?", contactIntro: "Розкажіть нам про пропозицію, співпрацю чи запитання. Ми прочитаємо повідомлення й відповімо безпосередньо.", contactFormAria: "Контактна форма", contactNameLabel: "Ім’я", contactEmailLabel: "Електронна пошта", contactMessageLabel: "Повідомлення", contactPrivacy: "Ми використаємо ваші дані лише для відповіді на це повідомлення.", contactSubmit: "Надіслати повідомлення", contactSuccess: "Дякуємо. Ваше повідомлення успішно надіслано.",
+  },
+  ar: {
+    purposeEyebrow: "غايتنا", purposeTitle: "المتعة هي البداية.", purposeCopy: "بالنسبة إلينا، اللعبة المصممة بقصد هي تجربة لها هدف واضح يتجاوز الترفيه. نختار القواعد والديناميكية والإيقاع والتصميم لتحقيق شيء ملموس: جمع الناس، وتنمية اتخاذ القرار، وسرد قصة، أو ترك ذكرى.", purposeClosing: "الغاية لا تحل محل المتعة، بل تمنحها اتجاهًا.",
+    contactEyebrow: "لنتحدث", contactTitle: "لديك فكرة أو ترغب في التحدث؟", contactIntro: "أخبرنا عن اقتراحك أو تعاونك أو سؤالك. سنقرأ رسالتك ونرد عليك مباشرة.", contactFormAria: "نموذج الاتصال", contactNameLabel: "الاسم", contactEmailLabel: "البريد الإلكتروني", contactMessageLabel: "الرسالة", contactPrivacy: "سنستخدم بياناتك فقط للرد على هذه الرسالة.", contactSubmit: "إرسال الرسالة", contactSuccess: "شكرًا لك. تم إرسال رسالتك بنجاح.",
+  },
+  hi: {
+    purposeEyebrow: "हमारा उद्देश्य", purposeTitle: "मनोरंजन तो शुरुआत है।", purposeCopy: "हमारे लिए उद्देश्य के साथ बनाया गया खेल केवल मनोरंजन नहीं, बल्कि एक स्पष्ट लक्ष्य वाला अनुभव है। इसके नियम, गति, ताल और डिज़ाइन किसी ठोस परिणाम के लिए चुने जाते हैं: लोगों को जोड़ना, निर्णय लेने का अभ्यास कराना, कहानी कहना या एक याद छोड़ना।", purposeClosing: "उद्देश्य मनोरंजन की जगह नहीं लेता: उसे दिशा देता है।",
+    contactEyebrow: "बात करें", contactTitle: "कोई विचार है या बात करना चाहते हैं?", contactIntro: "अपने प्रस्ताव, सहयोग या सवाल के बारे में बताएं। हम आपका संदेश पढ़कर सीधे जवाब देंगे।", contactFormAria: "संपर्क फ़ॉर्म", contactNameLabel: "नाम", contactEmailLabel: "ईमेल पता", contactMessageLabel: "संदेश", contactPrivacy: "हम आपकी जानकारी का उपयोग केवल इस संदेश का जवाब देने के लिए करेंगे।", contactSubmit: "संदेश भेजें", contactSuccess: "धन्यवाद। आपका संदेश सफलतापूर्वक भेजा गया।",
+  },
+  zh: {
+    purposeEyebrow: "我们的初衷", purposeTitle: "乐趣只是开始。", purposeCopy: "对我们而言，用心制作的游戏不仅为了娱乐，更承载着明确目标。规则、机制、节奏和设计都经过选择，以实现具体价值：连接玩家、锻炼决策、讲述故事或留下难忘回忆。", purposeClosing: "目标不会取代乐趣，而是为乐趣指明方向。",
+    contactEyebrow: "联系我们", contactTitle: "有想法，或者想聊聊吗？", contactIntro: "欢迎告诉我们你的提案、合作意向或问题。我们会阅读并直接回复。", contactFormAria: "联系表单", contactNameLabel: "姓名", contactEmailLabel: "电子邮箱", contactMessageLabel: "留言", contactPrivacy: "你的资料仅用于回复本次留言。", contactSubmit: "发送留言", contactSuccess: "谢谢。你的留言已成功发送。",
+  },
+  ja: {
+    purposeEyebrow: "私たちの意図", purposeTitle: "楽しさは始まりです。", purposeCopy: "私たちにとって、意図を持って作るゲームとは、娯楽を超えた明確な目的を持つ体験です。ルール、仕組み、テンポ、デザインを丁寧に選び、人をつなぐ、判断力を磨く、物語を伝える、記憶に残るといった具体的な価値を生み出します。", purposeClosing: "目的は楽しさに代わるものではなく、楽しさに方向を与えます。",
+    contactEyebrow: "お話ししましょう", contactTitle: "アイデアやご相談はありますか？", contactIntro: "ご提案、コラボレーション、ご質問をお聞かせください。メッセージを確認し、直接お返事します。", contactFormAria: "お問い合わせフォーム", contactNameLabel: "お名前", contactEmailLabel: "メールアドレス", contactMessageLabel: "メッセージ", contactPrivacy: "入力情報は、このメッセージへの返信にのみ使用します。", contactSubmit: "メッセージを送る", contactSuccess: "ありがとうございます。メッセージを送信しました。",
+  },
+  ko: {
+    purposeEyebrow: "우리의 의도", purposeTitle: "재미는 시작입니다.", purposeCopy: "우리에게 의도를 담아 만든 게임은 단순한 오락을 넘어 분명한 목표를 지닌 경험입니다. 규칙, 구조, 속도, 디자인은 사람을 연결하고, 의사결정을 연습하게 하며, 이야기를 전하거나 기억을 남기는 구체적인 가치를 위해 선택됩니다.", purposeClosing: "목적은 재미를 대신하지 않습니다. 재미에 방향을 더합니다.",
+    contactEyebrow: "이야기해요", contactTitle: "아이디어가 있거나 대화하고 싶나요?", contactIntro: "제안, 협업 또는 질문을 알려주세요. 메시지를 읽고 직접 답변드리겠습니다.", contactFormAria: "문의 양식", contactNameLabel: "이름", contactEmailLabel: "이메일 주소", contactMessageLabel: "메시지", contactPrivacy: "입력 정보는 이 메시지에 답변하는 용도로만 사용합니다.", contactSubmit: "메시지 보내기", contactSuccess: "감사합니다. 메시지가 성공적으로 전송되었습니다.",
+  },
+};
+
+Object.entries(purposeContactTranslations).forEach(([code, copy]) => {
+  Object.assign(translations[code], copy);
+});
+
 const storageKey = "nokegames.language";
 const supportedCodes = new Set(languages.map(({ code }) => code));
 
@@ -532,4 +611,10 @@ if (typeof document !== "undefined") {
   document.querySelector("#language-select")?.addEventListener("change", (event) => {
     applyLanguage(event.target.value);
   });
+
+  const contactSuccess = document.querySelector("#contact-success");
+  if (new URLSearchParams(window.location.search).get("contacto") === "enviado" && contactSuccess) {
+    contactSuccess.hidden = false;
+    contactSuccess.focus({ preventScroll: true });
+  }
 }

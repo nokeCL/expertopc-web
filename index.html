@@ -99,6 +99,19 @@
         </div>
       </section>
 
+      <section class="purpose-section" aria-labelledby="purpose-title">
+        <div class="purpose-heading">
+          <p class="eyebrow"><span class="eyebrow-line"></span><span data-i18n="purposeEyebrow">QUÉ SIGNIFICA</span></p>
+          <h2 id="purpose-title" data-i18n="purposeTitle">Juegos con un propósito claro.</h2>
+        </div>
+        <div class="purpose-copy">
+          <p data-i18n="purposeCopy">
+            Los juegos hechos con intención —o juegos con propósito— son experiencias lúdicas diseñadas con un objetivo específico y definido que va más allá de la simple diversión. Por eso, la dinámica, las reglas, los desafíos, el ritmo y los recursos de cada juego se eligen cuidadosamente para alcanzar una meta concreta: conectar personas, entrenar decisiones, contar una historia o dejar un aprendizaje.
+          </p>
+          <strong data-i18n="purposeClosing">La diversión sigue siendo esencial; la intención le da sentido y dirección.</strong>
+        </div>
+      </section>
+
       <section class="project-section" aria-labelledby="project-title">
         <div class="section-heading">
           <div>
@@ -214,6 +227,50 @@
             <p data-i18n="clarityCopy">Diseño honesto, sistemas claros y ninguna ventaja injusta por pagar.</p>
           </article>
         </div>
+      </section>
+
+      <section id="contacto" class="contact-section" aria-labelledby="contact-title">
+        <div class="contact-copy">
+          <p class="eyebrow"><span class="eyebrow-line"></span><span data-i18n="contactEyebrow">HABLEMOS</span></p>
+          <h2 id="contact-title" data-i18n="contactTitle">¿Tienes una idea o quieres conversar?</h2>
+          <p data-i18n="contactIntro">Cuéntanos sobre tu propuesta, colaboración o consulta. Leeremos tu mensaje y te responderemos directamente.</p>
+        </div>
+
+        <!-- Para cambiar el destinatario más adelante, reemplaza solo el correo de este action. -->
+        <form
+          class="contact-form"
+          action="https://formsubmit.co/nsantanajulio@gmail.com"
+          method="POST"
+          aria-label="Formulario de contacto"
+          data-i18n-aria="contactFormAria"
+        >
+          <input type="hidden" name="_subject" value="Nuevo mensaje desde Noke Games" />
+          <input type="hidden" name="_template" value="table" />
+          <input type="hidden" name="_captcha" value="true" />
+          <input type="hidden" name="_next" value="https://nokegames.vercel.app/?contacto=enviado#contacto" />
+          <input class="form-honeypot" type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true" />
+
+          <div class="form-field">
+            <label for="contact-name" data-i18n="contactNameLabel">Nombre</label>
+            <input id="contact-name" name="name" type="text" maxlength="80" autocomplete="name" required />
+          </div>
+
+          <div class="form-field">
+            <label for="contact-email" data-i18n="contactEmailLabel">Correo electrónico</label>
+            <input id="contact-email" name="email" type="email" maxlength="160" autocomplete="email" required />
+          </div>
+
+          <div class="form-field form-field--wide">
+            <label for="contact-message" data-i18n="contactMessageLabel">Mensaje</label>
+            <textarea id="contact-message" name="message" rows="6" minlength="10" maxlength="2000" required></textarea>
+          </div>
+
+          <div class="contact-form-footer">
+            <p data-i18n="contactPrivacy">Usaremos tus datos únicamente para responder este mensaje.</p>
+            <button type="submit" data-i18n="contactSubmit">Enviar mensaje</button>
+          </div>
+          <p id="contact-success" class="contact-success" tabindex="-1" hidden data-i18n="contactSuccess">Gracias. Tu mensaje fue enviado correctamente.</p>
+        </form>
       </section>
     </main>
 
