@@ -613,7 +613,10 @@ h1 {
 }
 
 .project-mark--gridmate small {
-  color: #8ba9d7;
+  color: #9bbcff;
+  font-size: 6px;
+  font-weight: 900;
+  letter-spacing: 0.13em;
 }
 
 .project-mark--fwd {
