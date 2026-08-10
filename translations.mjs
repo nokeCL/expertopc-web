@@ -476,7 +476,7 @@ const purposeContactTranslations = {
     contactEyebrow: "LET'S TALK", contactTitle: "Have an idea or want to talk?", contactIntro: "Tell us about your proposal, collaboration, or question. We will read your message and reply directly.", contactFormAria: "Contact form", contactNameLabel: "Name", contactEmailLabel: "Email address", contactMessageLabel: "Message", contactPrivacy: "We will use your information only to reply to this message.", contactSubmit: "Send message", contactSuccess: "Thank you. Your message was sent successfully.",
   },
   es: {
-    purposeEyebrow: "QUÉ SIGNIFICA", purposeTitle: "Juegos con un propósito claro.", purposeCopy: "Los juegos hechos con intención —o juegos con propósito— son experiencias lúdicas diseñadas con un objetivo específico y definido que va más allá de la simple diversión. Por eso, la dinámica, las reglas, los desafíos, el ritmo y los recursos de cada juego se eligen cuidadosamente para alcanzar una meta concreta: conectar personas, entrenar decisiones, contar una historia o dejar un aprendizaje.", purposeClosing: "La diversión sigue siendo esencial; la intención le da sentido y dirección.",
+    purposeEyebrow: "POR QUÉ LOS CREAMOS", purposeTitle: "Cada juego nace para provocar algo.", purposeCopy: "Para nosotros, un juego hecho con intención no es solo un juego que entretiene: es una experiencia creada para provocar algo en quien juega. Antes de diseñarlo nos preguntamos qué queremos que el jugador sienta, piense o comparta. A partir de esa respuesta construimos las reglas, los desafíos, el ritmo y el mundo del juego. El propósito puede ser conectar personas, poner a prueba decisiones o contar una historia, pero nunca reemplaza la diversión: la hace más significativa.", purposeClosing: "No agregamos el propósito al final: diseñamos cada juego desde él.",
     contactEyebrow: "HABLEMOS", contactTitle: "¿Tienes una idea o quieres conversar?", contactIntro: "Cuéntanos sobre tu propuesta, colaboración o consulta. Leeremos tu mensaje y te responderemos directamente.", contactFormAria: "Formulario de contacto", contactNameLabel: "Nombre", contactEmailLabel: "Correo electrónico", contactMessageLabel: "Mensaje", contactPrivacy: "Usaremos tus datos únicamente para responder este mensaje.", contactSubmit: "Enviar mensaje", contactSuccess: "Gracias. Tu mensaje fue enviado correctamente.",
   },
   pt: {
@@ -546,6 +546,31 @@ const purposeContactTranslations = {
 };
 
 Object.entries(purposeContactTranslations).forEach(([code, copy]) => {
+  Object.assign(translations[code], copy);
+});
+
+const navigationTranslations = {
+  en: { navAria: "Main navigation", navPurpose: "Intention", navProjects: "Projects", navContact: "Contact" },
+  es: { navAria: "Navegación principal", navPurpose: "Intención", navProjects: "Proyectos", navContact: "Contacto" },
+  pt: { navAria: "Navegação principal", navPurpose: "Intenção", navProjects: "Projetos", navContact: "Contato" },
+  fr: { navAria: "Navigation principale", navPurpose: "Intention", navProjects: "Projets", navContact: "Contact" },
+  de: { navAria: "Hauptnavigation", navPurpose: "Absicht", navProjects: "Projekte", navContact: "Kontakt" },
+  it: { navAria: "Navigazione principale", navPurpose: "Intenzione", navProjects: "Progetti", navContact: "Contatti" },
+  hr: { navAria: "Glavna navigacija", navPurpose: "Namjera", navProjects: "Projekti", navContact: "Kontakt" },
+  pl: { navAria: "Główna nawigacja", navPurpose: "Intencja", navProjects: "Projekty", navContact: "Kontakt" },
+  cs: { navAria: "Hlavní navigace", navPurpose: "Záměr", navProjects: "Projekty", navContact: "Kontakt" },
+  nl: { navAria: "Hoofdnavigatie", navPurpose: "Intentie", navProjects: "Projecten", navContact: "Contact" },
+  tr: { navAria: "Ana gezinme", navPurpose: "Niyet", navProjects: "Projeler", navContact: "İletişim" },
+  ru: { navAria: "Основная навигация", navPurpose: "Замысел", navProjects: "Проекты", navContact: "Контакты" },
+  uk: { navAria: "Основна навігація", navPurpose: "Задум", navProjects: "Проєкти", navContact: "Контакти" },
+  ar: { navAria: "التنقل الرئيسي", navPurpose: "غايتنا", navProjects: "المشاريع", navContact: "تواصل معنا" },
+  hi: { navAria: "मुख्य नेविगेशन", navPurpose: "उद्देश्य", navProjects: "प्रोजेक्ट", navContact: "संपर्क" },
+  zh: { navAria: "主导航", navPurpose: "初衷", navProjects: "项目", navContact: "联系" },
+  ja: { navAria: "メインナビゲーション", navPurpose: "意図", navProjects: "プロジェクト", navContact: "お問い合わせ" },
+  ko: { navAria: "주요 탐색", navPurpose: "의도", navProjects: "프로젝트", navContact: "문의" },
+};
+
+Object.entries(navigationTranslations).forEach(([code, copy]) => {
   Object.assign(translations[code], copy);
 });
 

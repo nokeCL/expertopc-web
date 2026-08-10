@@ -94,6 +94,31 @@ footer {
   font-weight: inherit;
 }
 
+.site-nav {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.site-nav a {
+  padding: 8px 10px;
+  border-radius: 8px;
+  color: #7f7e8a;
+  font-size: 10px;
+  font-weight: 750;
+  letter-spacing: 0.035em;
+}
+
+.site-nav a:hover {
+  background: rgba(139, 124, 255, 0.08);
+  color: #d4d0e2;
+}
+
+.site-nav a:focus-visible {
+  outline: 3px solid rgba(139, 124, 255, 0.38);
+  outline-offset: 2px;
+}
+
 .brand-mark,
 .project-mark {
   display: grid;
@@ -397,6 +422,7 @@ h1 {
 .contact-section {
   padding: 90px 0;
   border-top: 1px solid var(--line);
+  scroll-margin-top: 24px;
 }
 
 .purpose-section {
@@ -959,6 +985,9 @@ footer {
 
   .site-header {
     min-height: 68px;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 14px 0 10px;
   }
 
   .header-note,
@@ -969,6 +998,20 @@ footer {
   .language-selector select {
     min-width: 112px;
     max-width: 132px;
+  }
+
+  .site-nav {
+    order: 3;
+    flex: 1 0 100%;
+    justify-content: space-between;
+    padding-top: 9px;
+    border-top: 1px solid var(--line);
+  }
+
+  .site-nav a {
+    flex: 1;
+    padding-inline: 6px;
+    text-align: center;
   }
 
   .hero {
