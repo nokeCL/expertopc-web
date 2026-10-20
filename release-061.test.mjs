@@ -19,6 +19,8 @@ test('the studio publication has complete localized content in all eighteen lang
 test('canonical videos, current app links, new identity and date are used without autoplay', () => {
   for (const id of ['9WONbmMD38k', 'PYT5FWlty4s', 'cH1cTAK207c']) assert.match(html, new RegExp(`https://www.youtube.com/watch\\?v=${id}`));
   assert.match(html, /https:\/\/www.youtube.com\/@nokegamesCL/);
+  assert.match(html, /watch\?v=PYT5FWlty4s[^\n]+Crown &amp; Bone/);
+  assert.match(html, /watch\?v=cH1cTAK207c[^\n]+Pumpkin Coven/);
   assert.match(html, /datetime="2026-10-20"/);
   assert.match(html, /gridmate-061-scene.webp/);
   assert.match(html, /gridmate-061-icon.png/);
