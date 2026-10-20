@@ -1,3 +1,5 @@
+import { release061Copy } from './gridmate-beta-061.mjs';
+
 export const languages = [
   { code: "en", dir: "ltr" }, { code: "es", dir: "ltr" },
   { code: "pt", dir: "ltr" }, { code: "fr", dir: "ltr" },
@@ -601,11 +603,22 @@ Object.entries(navigationTranslations).forEach(([code, copy]) => {
   Object.assign(translations[code], copy);
 });
 
+for (const [code, c] of Object.entries(release061Copy)) {
+  Object.assign(translations[code], {
+    chessStage: translations[code].chessStage.replace(/0\.\d+\.\d+/g, '0.6.1'),
+    chessUpdateTitle: c.title, chessUpdateCopy: c.body, chessNextMilestone: c.next,
+    releaseTitle: c.title, releaseBody: c.body, releaseGuests: c.guests,
+    releaseLimits: c.limits, releaseEffects: c.effects, releaseBrand: c.brand,
+    releaseVideos: c.videos, releaseNext: c.next, releaseWatch: c.watch,
+    releaseChannel: c.channel, releaseTrailers: c.trailers, releaseImageAlt: c.imageAlt,
+  });
+}
+
 const storageKey = "nokegames.language";
 const supportedCodes = new Set(languages.map(({ code }) => code));
 
 export function applyLanguage(code, { persist = true } = {}) {
-  const language = supportedCodes.has(code) ? code : "es";
+  const language = supportedCodes.has(code) ? code : "en";
   const copy = translations[language];
   const direction = languages.find(({ code: itemCode }) => itemCode === language)?.dir ?? "ltr";
 
@@ -621,6 +634,11 @@ export function applyLanguage(code, { persist = true } = {}) {
   document.querySelectorAll("[data-i18n-aria]").forEach((element) => {
     const key = element.dataset.i18nAria;
     if (copy[key]) element.setAttribute("aria-label", copy[key]);
+  });
+
+  document.querySelectorAll('[data-i18n-alt]').forEach(element => {
+    const value = copy[element.dataset.i18nAlt];
+    if (value) element.setAttribute('alt', value);
   });
 
   const dateFormatter = new Intl.DateTimeFormat(language, {
@@ -653,11 +671,12 @@ export function applyLanguage(code, { persist = true } = {}) {
 if (typeof document !== "undefined") {
   const saved = window.localStorage.getItem(storageKey);
   const browserLanguage = window.navigator.language?.split("-")[0];
-  const initialLanguage = supportedCodes.has(saved)
+  const requested = new URLSearchParams(window.location.search).get('lang')?.split('-')[0];
+  const initialLanguage = supportedCodes.has(requested) ? requested : supportedCodes.has(saved)
     ? saved
     : supportedCodes.has(browserLanguage)
       ? browserLanguage
-      : "es";
+      : "en";
 
   applyLanguage(initialLanguage, { persist: false });
   document.querySelector("#language-select")?.addEventListener("change", (event) => {

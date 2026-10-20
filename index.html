@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="es">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -26,6 +26,7 @@
     <title>Noke Games — Juegos con una razón para existir</title>
     <link rel="canonical" href="https://nokegames.vercel.app/" />
     <link rel="stylesheet" href="/styles.css" />
+    <link rel="stylesheet" href="/release-061.css" />
   </head>
   <body>
     <div class="ambient ambient--one" aria-hidden="true"></div>
@@ -39,6 +40,7 @@
       <nav class="site-nav" aria-label="Navegación principal" data-i18n-aria="navAria">
         <a href="#intencion" data-i18n="navPurpose">Estudio</a>
         <a href="#proyectos" data-i18n="navProjects">Proyectos</a>
+        <a href="#gridmate-news">GridMate · 0.6.1</a>
         <a href="#contacto" data-i18n="navContact">Contacto</a>
       </nav>
       <div class="header-actions">
@@ -128,7 +130,7 @@
           <article class="project-card">
             <div class="project-identity">
               <span class="project-mark project-mark--gridmate" aria-hidden="true">
-                <strong>GM</strong><small>CHESS</small>
+                <img src="/gridmate-061-icon.png" width="64" height="64" alt="" />
               </span>
               <div>
                 <span class="project-status" data-i18n="projectStatus">En desarrollo activo</span>
@@ -143,7 +145,7 @@
             <section class="project-progress project-progress--milestone" aria-label="Progreso de GridMate Chess" data-i18n-aria="chessProgressAria">
               <div class="progress-heading">
                 <span data-i18n="currentStageLabel">Etapa actual</span>
-                <strong data-i18n="chessStage">Etapa 4 de 5 · Beta pública 0.2.1</strong>
+                <strong data-i18n="chessStage">Stage 4 of 5 · Public Beta 0.6.1</strong>
               </div>
               <div class="stage-track" aria-hidden="true">
                 <span class="stage-segment stage-segment--complete"></span>
@@ -154,15 +156,15 @@
               </div>
               <p class="progress-update">
                 <span data-i18n="currentUpdateLabel">Ahora</span>
-                <strong data-i18n="chessUpdateTitle">GridMate en 24 días: beta jugable</strong>
-                <span data-i18n="chessUpdateCopy">GridMate ya reúne juego local, invitaciones privadas, matchmaking clasificatorio, torneos, computadora, desafíos, Academia, amigos, perfiles y cosméticos. La siguiente pasada va por confiabilidad, comodidad móvil y aprendizaje más claro.</span>
+                <strong data-i18n="chessUpdateTitle">A new look. The same shared game.</strong>
+                <span data-i18n="chessUpdateCopy">Beta 0.6.1 brings guests into the same public and private tables, refreshes GridMate’s identity and brings the shop’s effect designs onto the board.</span>
               </p>
               <div class="progress-footer">
                 <span><b data-i18n="nextMilestoneLabel">Próximo hito</b> · <span data-i18n="chessNextMilestone">Pasada de confiabilidad para online, Academia y funciones sociales</span></span>
-                <span class="updated-at"><span data-i18n="updatedLabel">Actualizado</span> · <time datetime="2026-08-30" data-i18n-date>30 ago 2026</time></span>
+                <span class="updated-at"><span data-i18n="updatedLabel">Updated</span> · <time datetime="2026-10-20" data-i18n-date>Oct 20, 2026</time></span>
               </div>
             </section>
-            <a href="https://gridmate-chess.vercel.app/" target="_blank" rel="noopener noreferrer">
+            <a href="https://gridmate-chess.pages.dev/" target="_blank" rel="noopener noreferrer">
               <span data-i18n="projectLink">Conocer GridMate Chess</span> <span aria-hidden="true">↗</span>
             </a>
           </article>
@@ -207,6 +209,31 @@
               <span data-i18n="fwdLink">Conocer FWD OPERATORS</span> <span aria-hidden="true">↗</span>
             </a>
           </article>
+        </div>
+      </section>
+
+      <section id="gridmate-news" class="studio-release" aria-labelledby="release-title">
+        <p class="eyebrow">GridMate Chess · BETA 0.6.1 · <time datetime="2026-10-20" data-i18n-date>Oct 20, 2026</time></p>
+        <h2 id="release-title" data-i18n="releaseTitle">A new look. The same shared game.</h2>
+        <p class="studio-release__lede" data-i18n="releaseBody">Beta 0.6.1 brings guests into the same public and private tables, refreshes GridMate’s identity and brings the shop’s effect designs onto the board.</p>
+        <img class="studio-release__art" src="/gridmate-061-scene.webp" width="1600" height="900" loading="lazy" data-i18n-alt="releaseImageAlt" alt="GridMate Chess: white and dark pawns surrounded by neon hearts and stars." />
+        <ul class="studio-release__features">
+          <li data-i18n="releaseGuests">Join as a guest on the web or in Discord, create or join public and private tables, and invite friends by link—even if they have a registered account.</li>
+          <li data-i18n="releaseLimits">Guest sessions are temporary: no ranked play, purchases, rewards or saved progress. Create an account to keep your identity and collection.</li>
+          <li data-i18n="releaseEffects">Trails, captures, check and game-result effects follow the designs shown in the shop, with readable desktop/mobile sizing and respect for performance and reduced-motion settings.</li>
+          <li data-i18n="releaseBrand">Meet GridMate’s new logo, artwork and navigation icons.</li>
+        </ul>
+        <h3 data-i18n="releaseTrailers">Trailers &amp; collections</h3>
+        <p data-i18n="releaseVideos">Three new promotional videos are on the official NokeGames YouTube channel.</p>
+        <div class="studio-video-grid">
+          <a class="studio-video" href="https://www.youtube.com/watch?v=9WONbmMD38k" target="_blank" rel="noopener noreferrer"><img src="https://i.ytimg.com/vi/9WONbmMD38k/hqdefault.jpg" width="480" height="360" alt="" loading="lazy" referrerpolicy="no-referrer" /><strong dir="auto">GridMate Chess</strong><span data-i18n="releaseWatch">Watch on YouTube</span></a>
+          <a class="studio-video" href="https://www.youtube.com/watch?v=PYT5FWlty4s" target="_blank" rel="noopener noreferrer"><img src="https://i.ytimg.com/vi/PYT5FWlty4s/hqdefault.jpg" width="480" height="360" alt="" loading="lazy" referrerpolicy="no-referrer" /><strong dir="auto">Pumpkin Coven</strong><span data-i18n="releaseWatch">Watch on YouTube</span></a>
+          <a class="studio-video" href="https://www.youtube.com/watch?v=cH1cTAK207c" target="_blank" rel="noopener noreferrer"><img src="https://i.ytimg.com/vi/cH1cTAK207c/hqdefault.jpg" width="480" height="360" alt="" loading="lazy" referrerpolicy="no-referrer" /><strong dir="auto">Crown &amp; Bone</strong><span data-i18n="releaseWatch">Watch on YouTube</span></a>
+        </div>
+        <p class="studio-release__next" data-i18n="releaseNext">Real-money purchases await provider approval and final payment tests. Supporter Pack is coming soon.</p>
+        <div class="studio-release__links">
+          <a href="https://gridmate-chess.pages.dev/app/updates" target="_blank" rel="noopener noreferrer"><span data-i18n="releaseTitle">A new look. The same shared game.</span> ↗</a>
+          <a href="https://www.youtube.com/@nokegamesCL" target="_blank" rel="noopener noreferrer"><span data-i18n="releaseChannel">Official NokeGames channel</span> ↗</a>
         </div>
       </section>
 

@@ -1,0 +1,15 @@
+.studio-release{margin-block:64px;padding:clamp(20px,4vw,44px);border:1px solid #725596;border-radius:24px;background:linear-gradient(130deg,#1d1730,#101921);scroll-margin-top:110px;min-width:0}
+.studio-release h2{font-size:clamp(1.6rem,4vw,2.5rem);line-height:1.2;margin-block:12px}
+.studio-release__lede,.studio-release__features{max-width:80ch;line-height:1.8;color:#ddd5ed}.studio-release__features{padding-inline-start:22px}.studio-release__features li+li{margin-block-start:12px}
+.studio-release__art{display:block;width:100%;height:auto;max-height:560px;object-fit:contain;border-radius:16px;background:#11091c;margin-block:24px}
+.studio-video-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-block:20px}
+.studio-video{display:flex;flex-direction:column;gap:10px;min-width:0;border:1px solid #5f4b78;border-radius:14px;padding:10px;background:#15101f;color:#f0eaff;text-decoration:none}
+.studio-video img{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;border-radius:8px;background:#11091c}.studio-video strong,.studio-video span{padding-inline:4px}.studio-video span{font-size:.83rem;color:#bedfff}
+.studio-video:hover{border-color:#e68aff;background:#261930}.studio-release a:focus-visible{outline:3px solid #9be7ff;outline-offset:4px}
+.studio-release__next{font-size:.85rem;line-height:1.7;color:#c7b9d6;border-inline-start:2px solid #9477ba;padding-inline-start:12px}
+.studio-release__links{display:flex;flex-wrap:wrap;gap:14px 24px;margin-block-start:24px}.studio-release__links a{color:#c5ddff}
+.project-mark--gridmate img{display:block;width:100%;height:100%;object-fit:contain;border-radius:12px}
+/* Keep the existing anti-spam field hidden without a -9999px RTL scroll area. */
+.contact-form{position:relative}
+.contact-form .form-honeypot{left:auto!important;right:auto!important;inset-inline-start:0!important;top:0;width:1px;height:1px;margin:0;padding:0;overflow:hidden;clip-path:inset(50%);opacity:0;pointer-events:none}
+@media(max-width:640px){.studio-video-grid{grid-template-columns:1fr}.studio-release{margin-block:32px;border-radius:18px}.site-nav{flex-wrap:wrap}}
