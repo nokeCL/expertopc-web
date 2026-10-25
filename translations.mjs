@@ -1,6 +1,7 @@
 import { release061Copy } from './gridmate-beta-061.mjs';
 import { playerRelease071 } from './gridmate-beta-071.mjs';
 import {gridmateStory} from './gridmate-story.mjs';
+import {donationCopy} from './donation-copy.mjs';
 
 export const languages = [
   { code: "en", dir: "ltr" }, { code: "es", dir: "ltr" },
@@ -626,6 +627,9 @@ for(const [code,story] of Object.entries(gridmateStory)){
  Object.assign(translations[code],Object.fromEntries(Object.entries(story).map(([key,value])=>['story'+key[0].toUpperCase()+key.slice(1),value])));
 }
 const supportedCodes = new Set(languages.map(({ code }) => code));
+for(const [code,copy] of Object.entries(donationCopy)){
+ Object.assign(translations[code],Object.fromEntries(Object.entries(copy).map(([key,value])=>['donation'+key[0].toUpperCase()+key.slice(1),value])));
+}
 
 export function applyLanguage(code, { persist = true } = {}) {
   const language = supportedCodes.has(code) ? code : "en";
