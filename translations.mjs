@@ -619,7 +619,7 @@ for (const [code, c] of Object.entries(release061Copy)) {
 
 for(const [code,c] of Object.entries(playerRelease071)){
  Object.assign(translations[code],{chessStage:translations[code].chessStage.replace(/0\.\d+\.\d+/g,'0.7.1'),chessUpdateTitle:c.title,chessUpdateCopy:c.body,
-  release071Title:c.title,release071Body:c.body,release071Play:c.play,release071Tables:c.tables,release071Style:c.style,release071Effects:c.effects,release071Spectate:c.spectate});
+  release071Title:c.title,release071Body:c.body,release071Play:c.play,release071Tables:c.tables,release071Style:c.style,release071Effects:c.effects,release071Spectate:c.spectate,release071Personalization:c.personalization,release071PublicStyles:c.publicStyles});
 }
 
 const storageKey = "nokegames.language";

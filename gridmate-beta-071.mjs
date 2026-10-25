@@ -20,5 +20,25 @@ const rows={
  ja:['自分のテーブル、友だち、自分らしさ。','ベータ0.7.1では対局が探しやすくなり、盤面にも個性を出せます。','公開テーブル、ランク戦、招待がメインに。検索中の相手がいるとランク戦カードが赤くなります。同じ持ち時間を選びましょう。','コードやリンクで友だちを招待。新しい公開テーブルではホストが相手を承認してから対局が始まります。','移動、駒取り、チェック、メイト、勝利、敗北、名前の効果を組み合わせたり、盤や駒とセットで装備できます。','4つの新しいシグネチャー効果と夏の盤をコレクションに。','観戦可能な公開対局を両者のセットや共有された視点で楽しめます。相手の効果は固有の見た目を保ちます。'],
  ko:['내 테이블, 친구, 나만의 스타일.','베타 0.7.1에서 대국을 더 쉽게 찾고 체스판에 개성을 더하세요.','공개 테이블, 랭크 대국, 친구 초대가 중심입니다. 상대가 대국을 찾으면 랭크 카드가 빨간색으로 바뀝니다. 같은 시간 설정을 선택하세요.','코드나 링크로 친구를 초대하세요. 새 공개 테이블에서는 호스트가 상대를 수락한 뒤 대국이 시작됩니다.','이동, 잡기, 체크, 메이트, 승리, 패배, 이름 효과를 섞거나 체스판과 기물을 포함한 전체 세트를 장착하세요.','새 시그니처 효과 네 가지와 여름 체스판을 컬렉션에서 만나보세요.','관전이 허용된 공개 대국을 양쪽 세트나 공유된 플레이어 시점으로 보세요. 상대 효과의 개성은 유지됩니다.'],
 };
-export const playerRelease071=Object.freeze(Object.fromEntries(Object.entries(rows).map(([code,values])=>[code,Object.freeze(Object.fromEntries(keys.map((key,n)=>[key,values[n]])))])));
+const customization={
+ en:['Four free app themes, two free starter backgrounds for new and existing accounts, and ten more at 10 GridCoins each. Change them from Personalize, or choose no background.','Your public profile now shows your effects for each action.'],
+ es:['Cuatro temas gratis, dos fondos iniciales gratis para cuentas nuevas y anteriores, y diez más a 10 GridCoins cada uno. Cámbialos desde Personalizar o elige Sin fondo.','Tu perfil público ya muestra tus efectos para cada acción.'],
+ pt:['Quatro temas grátis, dois fundos iniciais grátis para contas novas e antigas e mais dez por 10 GridCoins cada. Troque em Personalizar ou escolha Sem fundo.','Seu perfil público agora mostra os efeitos de cada ação.'],
+ fr:['Quatre thèmes gratuits, deux fonds de départ gratuits pour les comptes nouveaux et existants, et dix autres à 10 GridCoins chacun. Changez-les dans Personnaliser ou choisissez Sans fond.','Votre profil public affiche désormais vos effets pour chaque action.'],
+ de:['Vier kostenlose App-Designs, zwei kostenlose Starthintergründe für neue und bestehende Konten und zehn weitere für je 10 GridCoins. Wechsle sie unter Personalisieren oder wähle Ohne Hintergrund.','Dein öffentliches Profil zeigt jetzt deine Effekte für jede Aktion.'],
+ it:['Quattro temi gratuiti, due sfondi iniziali gratis per account nuovi ed esistenti e altri dieci a 10 GridCoins ciascuno. Cambiali da Personalizza o scegli Nessuno sfondo.','Il profilo pubblico mostra ora gli effetti di ogni azione.'],
+ hr:['Četiri besplatne teme, dvije besplatne početne pozadine za nove i postojeće račune te još deset po 10 GridCoins. Promijeni ih pod Prilagodi ili odaberi Bez pozadine.','Tvoj javni profil sada prikazuje efekte za svaku radnju.'],
+ pl:['Cztery darmowe motywy, dwa darmowe tła startowe dla nowych i istniejących kont oraz dziesięć kolejnych po 10 GridCoins. Zmień je w Personalizuj lub wybierz Bez tła.','Twój publiczny profil pokazuje teraz efekty każdej akcji.'],
+ cs:['Čtyři bezplatné motivy, dvě bezplatná úvodní pozadí pro nové i stávající účty a dalších deset po 10 GridCoins. Změň je v Přizpůsobit nebo vyber Bez pozadí.','Tvůj veřejný profil nyní ukazuje efekty pro každou akci.'],
+ nl:['Vier gratis app-thema’s, twee gratis startachtergronden voor nieuwe en bestaande accounts en tien extra voor elk 10 GridCoins. Wissel ze via Personaliseren of kies Geen achtergrond.','Je openbare profiel toont nu je effecten per actie.'],
+ tr:['Dört ücretsiz tema, yeni ve mevcut hesaplara iki ücretsiz başlangıç arka planı ve tanesi 10 GridCoins olan on ek arka plan. Kişiselleştir bölümünden değiştir veya Arka plan yok seç.','Herkese açık profilin artık her eylem için efektlerini gösterir.'],
+ ru:['Четыре бесплатные темы, два бесплатных стартовых фона для новых и существующих аккаунтов и ещё десять по 10 GridCoins. Меняйте их в разделе персонализации или выбирайте вариант без фона.','Публичный профиль теперь показывает эффекты для каждого действия.'],
+ uk:['Чотири безкоштовні теми, два безкоштовні початкові тла для нових і наявних облікових записів та ще десять по 10 GridCoins. Змінюй їх у персоналізації або обирай варіант без тла.','Публічний профіль тепер показує ефекти для кожної дії.'],
+ ar:['أربع سمات مجانية وخلفيتان مجانيتان للحسابات الجديدة والحالية وعشر خلفيات إضافية مقابل 10 GridCoins لكل منها. غيّرها من تخصيص أو اختر بلا خلفية.','يعرض ملفك العام الآن مؤثرات كل إجراء.'],
+ hi:['चार मुफ़्त थीम, नए और मौजूदा खातों के लिए दो मुफ़्त शुरुआती पृष्ठभूमियाँ और 10 GridCoins प्रति पृष्ठभूमि पर दस और विकल्प। निजी रूप दें से बदलें या बिना पृष्ठभूमि चुनें।','आपकी सार्वजनिक प्रोफ़ाइल अब हर कार्रवाई के प्रभाव दिखाती है।'],
+ zh:['四款免费应用主题，新老账号均获两款免费初始背景，另有十款背景，每款10 GridCoins。在个性化中切换，也可以选择无背景。','公开个人资料现在会显示各动作的特效组合。'],
+ ja:['無料テーマ4種類、新規・既存アカウントに無料の初期背景2種類、さらに各10 GridCoinsの背景10種類を追加。カスタマイズで変更するか、背景なしを選べます。','公開プロフィールに各アクションの効果が表示されるようになりました。'],
+ ko:['무료 테마 네 가지, 신규 및 기존 계정에 무료 기본 배경 두 가지, 개당 10 GridCoins인 추가 배경 열 가지. 꾸미기에서 변경하거나 배경 없음을 선택하세요.','공개 프로필에 이제 행동별 효과 조합이 표시됩니다.'],
+};
+export const playerRelease071=Object.freeze(Object.fromEntries(Object.entries(rows).map(([code,values])=>[code,Object.freeze({...Object.fromEntries(keys.map((key,n)=>[key,values[n]])),personalization:customization[code][0],publicStyles:customization[code][1]})])));
 export const getPlayerRelease071=code=>playerRelease071[String(code??'en').split('-')[0]]??playerRelease071.en;

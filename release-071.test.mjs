@@ -11,5 +11,6 @@ test('current studio news is localized, player-facing and dated after the preser
  assert.ok(html.indexOf('id="gridmate-news"')<html.indexOf('id="gridmate-061-news"'));
  assert.match(html,/datetime="2026-10-25"/);assert.match(html,/GridMate · 0\.7\.1/);
  assert.match(html,/https:\/\/gridmate-chess.pages.dev\/app\/play/);
+ for(const c of Object.values(playerRelease071)){assert.ok(c.personalization.includes('10'));assert.ok(c.publicStyles.trim().length>5);}
  assert.doesNotMatch(html,/data-i18n="releaseNext"/);
 });
