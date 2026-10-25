@@ -1,4 +1,5 @@
 import { release061Copy } from './gridmate-beta-061.mjs';
+import { playerRelease071 } from './gridmate-beta-071.mjs';
 
 export const languages = [
   { code: "en", dir: "ltr" }, { code: "es", dir: "ltr" },
@@ -612,6 +613,11 @@ for (const [code, c] of Object.entries(release061Copy)) {
     releaseVideos: c.videos, releaseNext: c.next, releaseWatch: c.watch,
     releaseChannel: c.channel, releaseTrailers: c.trailers, releaseImageAlt: c.imageAlt,
   });
+}
+
+for(const [code,c] of Object.entries(playerRelease071)){
+ Object.assign(translations[code],{chessStage:translations[code].chessStage.replace(/0\.\d+\.\d+/g,'0.7.1'),chessUpdateTitle:c.title,chessUpdateCopy:c.body,
+  release071Title:c.title,release071Body:c.body,release071Play:c.play,release071Tables:c.tables,release071Style:c.style,release071Effects:c.effects,release071Spectate:c.spectate});
 }
 
 const storageKey = "nokegames.language";

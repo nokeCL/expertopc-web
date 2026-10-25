@@ -3,6 +3,7 @@ import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import { languages, translations } from './translations.mjs';
 import { release061Copy } from './gridmate-beta-061.mjs';
+import { playerRelease071 } from './gridmate-beta-071.mjs';
 const html = readFileSync(new URL('./index.html', import.meta.url), 'utf8');
 
 test('the studio publication has complete localized content in all eighteen languages', () => {
@@ -11,8 +12,9 @@ test('the studio publication has complete localized content in all eighteen lang
   const newsKeys = [...html.matchAll(/data-i18n="(release[^"]+)"/g)].map(m => m[1]);
   for (const {code} of languages) {
     for (const key of newsKeys) assert.ok(translations[code][key]?.length > 5, `${code}.${key}`);
-    assert.equal(translations[code].chessUpdateTitle, release061Copy[code].title);
-    assert.match(translations[code].chessStage, /0\.6\.1/);
+    assert.equal(translations[code].chessUpdateTitle, playerRelease071[code].title);
+    assert.match(translations[code].chessStage, /0\.7\.1/);
+    assert.equal(translations[code].releaseTitle,release061Copy[code].title,'historical article remains unchanged');
     assert.equal(translations[code].releaseImageAlt, release061Copy[code].imageAlt);
   }
 });
