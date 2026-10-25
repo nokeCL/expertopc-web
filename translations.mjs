@@ -1,5 +1,6 @@
 import { release061Copy } from './gridmate-beta-061.mjs';
 import { playerRelease071 } from './gridmate-beta-071.mjs';
+import {gridmateStory} from './gridmate-story.mjs';
 
 export const languages = [
   { code: "en", dir: "ltr" }, { code: "es", dir: "ltr" },
@@ -621,6 +622,9 @@ for(const [code,c] of Object.entries(playerRelease071)){
 }
 
 const storageKey = "nokegames.language";
+for(const [code,story] of Object.entries(gridmateStory)){
+ Object.assign(translations[code],Object.fromEntries(Object.entries(story).map(([key,value])=>['story'+key[0].toUpperCase()+key.slice(1),value])));
+}
 const supportedCodes = new Set(languages.map(({ code }) => code));
 
 export function applyLanguage(code, { persist = true } = {}) {

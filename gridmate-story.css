@@ -1,0 +1,11 @@
+.gridmate-story{min-inline-size:0;margin-block:24px 32px;padding:clamp(20px,3vw,34px);border:1px solid #7b5a9b88;border-radius:18px;background:linear-gradient(135deg,#21172f,#131823);scroll-margin-block-start:120px;color:#f1eaf8}
+.gridmate-story__meta{font-size:11px;color:#cbb9de;letter-spacing:.035em;line-height:1.6;margin:0 0 10px}
+.gridmate-story .gridmate-story__title{font-size:clamp(23px,2.3vw,31px);line-height:1.3;letter-spacing:-.025em;margin:0 0 15px;max-width:34ch;text-wrap:balance;color:#f5effc}
+.gridmate-story__lead{max-width:78ch;font-size:14px;line-height:1.85;color:#d7cbdf;margin:0}
+.gridmate-story summary{cursor:pointer;font-size:13px;font-weight:700;color:#d8b7ff;width:fit-content;padding:12px 0;margin-top:12px;border-radius:5px}
+.gridmate-story summary:focus-visible{outline:3px solid #c9a3f2;outline-offset:5px}
+.gridmate-story__body{max-width:78ch;margin-top:12px}
+.gridmate-story__body :is(h3,h4){font-size:18px;line-height:1.45;letter-spacing:-.015em;color:#eee0fc;margin:24px 0 10px}
+.gridmate-story__body p{font-size:14px;line-height:1.9;color:#dbd0e4;margin:10px 0 16px;overflow-wrap:break-word}
+.gridmate-story .gridmate-story__closing{border-inline-start:2px solid #9670ba;padding-inline-start:15px;margin-top:25px;color:#cbb9d8}
+@media(max-width:600px){.gridmate-story{padding:20px;border-radius:14px}.gridmate-story .gridmate-story__title{font-size:23px}.gridmate-story__body p,.gridmate-story__lead{font-size:13px;line-height:1.85}}
