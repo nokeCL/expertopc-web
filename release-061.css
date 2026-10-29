@@ -2,6 +2,9 @@
 .studio-release h2{font-size:clamp(1.6rem,4vw,2.5rem);line-height:1.2;margin-block:12px}
 .studio-release__lede,.studio-release__features{max-width:80ch;line-height:1.8;color:#ddd5ed}.studio-release__features{padding-inline-start:22px}.studio-release__features li+li{margin-block-start:12px}
 .studio-release__art{display:block;width:100%;height:auto;max-height:560px;object-fit:contain;border-radius:16px;background:#11091c;margin-block:24px}
+.studio-release__poster{margin:24px 0}
+.studio-release__poster .studio-release__art{margin-block:0}
+.studio-release__poster figcaption{margin-block-start:10px;font-size:.8rem;line-height:1.6;color:#c7b9d6}
 .studio-video-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-block:20px}
 .studio-video{display:flex;flex-direction:column;gap:10px;min-width:0;border:1px solid #5f4b78;border-radius:14px;padding:10px;background:#15101f;color:#f0eaff;text-decoration:none}
 .studio-video img{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;border-radius:8px;background:#11091c}.studio-video strong,.studio-video span{padding-inline:4px}.studio-video span{font-size:.83rem;color:#bedfff}

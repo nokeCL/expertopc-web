@@ -1,5 +1,6 @@
 import { release061Copy } from './gridmate-beta-061.mjs';
 import { playerRelease071 } from './gridmate-beta-071.mjs';
+import { release080Copy } from './gridmate-beta-080.mjs';
 import {gridmateStory} from './gridmate-story.mjs';
 import {donationCopy} from './donation-copy.mjs';
 
@@ -620,6 +621,15 @@ for (const [code, c] of Object.entries(release061Copy)) {
 for(const [code,c] of Object.entries(playerRelease071)){
  Object.assign(translations[code],{chessStage:translations[code].chessStage.replace(/0\.\d+\.\d+/g,'0.7.1'),chessUpdateTitle:c.title,chessUpdateCopy:c.body,
   release071Title:c.title,release071Body:c.body,release071Play:c.play,release071Tables:c.tables,release071Style:c.style,release071Effects:c.effects,release071Spectate:c.spectate,release071Personalization:c.personalization,release071PublicStyles:c.publicStyles});
+}
+
+for (const [code, copy] of Object.entries(release080Copy)) {
+  Object.assign(translations[code], {
+    chessStage: translations[code].chessStage.replace(/0\.\d+\.\d+/g, '0.8.0'),
+    chessUpdateTitle: copy.title,
+    chessUpdateCopy: copy.body,
+    ...Object.fromEntries(Object.entries(copy).map(([key, value]) => ['release080' + key[0].toUpperCase() + key.slice(1), value])),
+  });
 }
 
 const storageKey = "nokegames.language";
